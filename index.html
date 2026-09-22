@@ -1017,6 +1017,16 @@ body{
   }
 }
 
+
+/* v21 — app screenshots presented inside phone frames */
+.phoneMain,.phoneGhost{background:#090909;border:7px solid #111;padding:9px;box-sizing:border-box;overflow:hidden}
+.phoneMain{border-radius:44px;box-shadow:0 34px 80px rgba(45,30,18,.25),inset 0 0 0 1px rgba(255,255,255,.08)}
+.phoneGhost{border-radius:38px;box-shadow:0 24px 55px rgba(45,30,18,.16),inset 0 0 0 1px rgba(255,255,255,.07)}
+.phoneMain img,.phoneGhost img{display:block;width:100%;height:auto;aspect-ratio:.56;object-fit:cover;object-position:top;border-radius:30px}
+.phoneGhost img{border-radius:25px}
+.phoneIsland{position:absolute;z-index:7;top:16px;left:50%;transform:translateX(-50%);width:31%;height:17px;border-radius:999px;background:#050505;box-shadow:0 0 0 1px rgba(255,255,255,.035)}
+.phoneGhost .phoneIsland{top:13px;height:13px}
+@media(max-width:700px){.phoneMain{border-width:6px;padding:7px;border-radius:37px}.phoneGhost{border-width:5px;padding:6px;border-radius:31px}.phoneMain img{border-radius:26px}.phoneGhost img{border-radius:22px}.phoneIsland{top:12px;height:14px}.phoneGhost .phoneIsland{top:10px;height:11px}}
 </style>
 
 <style id="v15-mobile-final">
@@ -1443,9 +1453,9 @@ body{
         </div>
       </div>
       <div class="phoneStage">
-        <div class="phoneGhost left"><img id="ghostLeft" src="assets/nk-app-residents-clean.png" alt="NK residents"></div>
-        <div class="phoneMain"><img id="mainPhone" src="assets/nk-app-home-clean.png" alt="NK menu"></div>
-        <div class="phoneGhost right"><img id="ghostRight" src="assets/nk-app-academy-clean.png" alt="NK academy"></div>
+        <div class="phoneGhost left"><span class="phoneIsland"></span><img id="ghostLeft" src="assets/nk-app-residents-clean.png" alt="NK residents"></div>
+        <div class="phoneMain"><span class="phoneIsland"></span><img id="mainPhone" src="assets/nk-app-home-clean.png" alt="NK menu"></div>
+        <div class="phoneGhost right"><span class="phoneIsland"></span><img id="ghostRight" src="assets/nk-app-academy-clean.png" alt="NK academy"></div>
       </div>
     </div>
   </div>

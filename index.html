@@ -1,10 +1,11 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="ru">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
 <title>NK CLUB — рост аутсорсингового бизнеса не в одиночку</title>
-<meta name="description" content="NK CLUB — отраслевое сообщество владельцев аутсорсинговых и аутстаффинговых компаний: разбор бизнеса, трекинг, сильное окружение, база знаний и работа на результат.">
+<meta content="NK CLUB — отраслевое сообщество владельцев аутсорсинговых и аутстаффинговых компаний: разбор бизнеса, трекинг, сильное окружение, база знаний и работа на результат." name="description"/>
 <style>
 :root{
   --bg:#f5f2ec;
@@ -1027,8 +1028,52 @@ body{
 .phoneIsland{position:absolute;z-index:7;top:16px;left:50%;transform:translateX(-50%);width:31%;height:17px;border-radius:999px;background:#050505;box-shadow:0 0 0 1px rgba(255,255,255,.035)}
 .phoneGhost .phoneIsland{top:13px;height:13px}
 @media(max-width:700px){.phoneMain{border-width:6px;padding:7px;border-radius:37px}.phoneGhost{border-width:5px;padding:6px;border-radius:31px}.phoneMain img{border-radius:26px}.phoneGhost img{border-radius:22px}.phoneIsland{top:12px;height:14px}.phoneGhost .phoneIsland{top:10px;height:11px}}
-</style>
 
+/* v22 — full app carousel + two-path final CTA */
+.appShowcase{padding:54px 0 72px}.appIntro{max-width:720px;margin-bottom:28px}.appIntro h2{font-size:clamp(42px,5vw,76px);line-height:.94;margin:10px 0 18px}.appIntro p{max-width:620px;font-size:18px;color:var(--muted)}
+.appCarousel{position:relative;overflow:hidden;border-radius:34px;padding:34px 56px;background:radial-gradient(circle at 75% 20%,rgba(255,122,22,.20),transparent 30%),linear-gradient(135deg,#171512,#0b0b0a);box-shadow:0 28px 70px rgba(43,28,17,.16)}
+.carTrack{display:flex;gap:26px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;scroll-behavior:smooth;padding:4px 2px 10px}.carTrack::-webkit-scrollbar{display:none}.screenCard{min-width:min(360px,76vw);scroll-snap-align:center;color:#fff;text-align:center}.screenCard h3{font-size:24px;margin:18px 0 7px}.screenCard p{color:#bdb7ae;max-width:320px;margin:auto;line-height:1.45}.screenPhone,.manifestoPhone{position:relative;width:260px;height:520px;margin:auto;border:7px solid #222;border-radius:45px;background:#080808;padding:9px;box-shadow:0 30px 70px rgba(0,0,0,.45),inset 0 0 0 1px rgba(255,255,255,.08);overflow:hidden}.screenPhone img{width:100%;height:100%;object-fit:cover;object-position:top;border-radius:30px;display:block}.screenIsland{position:absolute;z-index:2;top:16px;left:50%;transform:translateX(-50%);width:32%;height:17px;border-radius:99px;background:#050505}.manifestoPhone{display:flex;flex-direction:column;justify-content:center;align-items:center;background:radial-gradient(circle at 50% 25%,#3d1b0d,#090909 55%);padding:24px}.manifestoPhone span{font-weight:900;font-size:36px;line-height:.8}.manifestoPhone em{font-family:Georgia,serif;font-size:34px;color:var(--orange);margin:58px 0 70px;transform:rotate(-6deg)}.manifestoPhone small{text-transform:uppercase;letter-spacing:.18em;color:#ddd}.carArrow{position:absolute;z-index:4;top:48%;width:48px;height:48px;border-radius:50%;border:1px solid rgba(255,255,255,.3);background:rgba(0,0,0,.45);color:white;font-size:24px;cursor:pointer}.carArrow.prev{left:14px}.carArrow.next{right:14px}.carDots{display:flex;justify-content:center;gap:8px;margin-top:14px}.carDots i{width:8px;height:8px;border-radius:50%;background:#cfc5b8}.carDots i.active{width:24px;border-radius:99px;background:var(--orange)}
+.finalChoice{background:#171717;color:#fff;border-radius:34px;padding:46px}.finalHead{max-width:760px}.finalHead h2{font-size:clamp(38px,5vw,68px);line-height:.95;margin:10px 0 16px}.finalHead p{color:#bdb8b1;font-size:18px}.choiceGrid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:32px}.choiceCard{border:1px solid #343434;border-radius:26px;padding:28px;background:#1d1d1d}.choiceCard.primary{background:linear-gradient(135deg,#40200f,#24150e);border-color:#6f3515}.choiceIcon{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;background:#2a2a2a;color:var(--orange);font-size:25px;font-weight:800}.primary .choiceIcon{background:#5a2b12}.choiceCard h3{font-size:28px;margin:18px 0 10px}.choiceCard p{color:#bbb4ad;line-height:1.5;min-height:76px}.choiceCard .btn{display:block;text-align:center;margin-top:18px}.choiceCard small{display:block;color:#a9a39c;margin-top:12px;text-align:center}.choiceCard .form{display:grid;gap:10px;margin-top:16px}.choiceCard .form input:not([type=checkbox]){background:#252525!important;border-color:#3a3a3a!important;color:#fff!important}.choiceCard .consentRow{color:#9f9992}
+@media(max-width:700px){.appShowcase{padding:34px 0 52px}.appIntro h2{font-size:42px}.appCarousel{padding:24px 38px;border-radius:26px}.screenCard{min-width:82vw}.screenPhone,.manifestoPhone{width:230px;height:460px;border-radius:39px}.screenPhone img{border-radius:26px}.carArrow{width:38px;height:38px;font-size:20px}.carArrow.prev{left:6px}.carArrow.next{right:6px}.finalChoice{padding:28px 18px;border-radius:26px}.choiceGrid{grid-template-columns:1fr}.choiceCard{padding:22px}.choiceCard p{min-height:0}.finalHead h2{font-size:40px}}
+
+/* v23 product-first structure */
+.softMode{margin-top:28px;padding:20px 22px;border:1px solid rgba(20,20,18,.12);border-radius:22px;background:rgba(255,255,255,.55);display:grid;gap:6px}.softMode b{font-size:18px}.softMode span{color:#777168;line-height:1.45}.includedChips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}.includedChips span{padding:9px 12px;border:1px solid rgba(20,20,18,.12);border-radius:999px;background:#fffaf4;font-size:13px}.premiumPhone{position:relative;width:min(250px,82%);aspect-ratio:9/19.4;margin:0 auto 22px;border-radius:42px;padding:8px;background:linear-gradient(145deg,#9b7b51 0%,#171512 13%,#050505 48%,#a98a5e 100%);box-shadow:0 28px 60px rgba(25,15,5,.28),inset 0 0 0 1px rgba(255,225,175,.5);overflow:hidden}.premiumPhone:before{content:"";position:absolute;inset:8px;border-radius:35px;background:#080808;z-index:0}.premiumPhone img{position:absolute;z-index:1;inset:10px;width:calc(100% - 20px);height:calc(100% - 20px);object-fit:cover;object-position:top;border-radius:32px}.phoneIsland{position:absolute;z-index:3;top:17px;left:50%;transform:translateX(-50%);width:34%;height:18px;border-radius:999px;background:#020202;box-shadow:0 0 0 1px rgba(255,255,255,.03)}.manifestoPremium{background:linear-gradient(145deg,#a47a48,#080808 18%,#030303 72%,#a47a48)}.manifestoInner{position:absolute;z-index:2;inset:10px;border-radius:32px;background:radial-gradient(circle at 50% 70%,#5a2107 0,#160b07 35%,#050505 70%);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#fff}.manifestoInner b{font-size:27px;letter-spacing:.08em;line-height:.9}.manifestoInner em{font-family:cursive;color:#ff7417;font-size:31px;line-height:1.05;margin:42px 0;font-weight:500}.manifestoInner small{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#c8b9aa}.glowChoice{box-shadow:0 0 0 1px rgba(255,119,22,.35),0 0 45px rgba(255,119,22,.22),0 22px 55px rgba(0,0,0,.24)!important}.glowChoice .btn{box-shadow:0 0 28px rgba(255,119,22,.42)}
+@media(max-width:760px){.includedChips{gap:6px}.includedChips span{font-size:12px;padding:8px 10px}.premiumPhone{width:74%;max-width:280px}.softMode{margin-top:18px;padding:16px}.appIntro h2{max-width:12ch}}
+
+/* v24 — sales-first product showcase with real NK phone screens */
+.valueGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:28px 0 34px}.valueGrid>div{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px;min-height:132px}.valueGrid b{display:block;font-size:16px;line-height:1.18;margin-bottom:8px}.valueGrid span{display:block;color:var(--muted);font-size:12px;line-height:1.45}.phoneShowcase{position:relative;overflow:hidden;border-radius:36px;padding:42px 58px 26px;background:radial-gradient(circle at 50% 35%,rgba(255,122,22,.19),transparent 33%),linear-gradient(135deg,#181613,#090909);box-shadow:0 30px 80px rgba(43,28,17,.18)}.phoneShowcase .carTrack{gap:36px;align-items:flex-start}.phoneShowcase .screenCard{min-width:min(390px,76vw)}.realPhone{display:block;width:310px;height:625px;object-fit:contain;margin:0 auto;filter:drop-shadow(0 30px 30px rgba(0,0,0,.42))}.phoneShowcase .screenCard h3{font-size:25px}.phoneShowcase .screenCard p{min-height:44px}.appBottomLine{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:18px;margin-top:18px;background:var(--orange);border-radius:20px;padding:17px 20px;color:#231208}.appBottomLine b{font-size:22px}.appBottomLine span{font-size:13px}.appBottomLine a{font-weight:900;text-decoration:none;color:#231208;background:#fff;border-radius:999px;padding:11px 16px}.glowChoice{position:relative;isolation:isolate;overflow:hidden;box-shadow:0 0 0 1px rgba(255,122,22,.18),0 0 42px rgba(255,122,22,.20),0 24px 70px rgba(0,0,0,.25)}.glowChoice:before{content:"";position:absolute;z-index:-1;inset:-50%;background:radial-gradient(circle,rgba(255,122,22,.28),transparent 48%);animation:nkGlow 3.2s ease-in-out infinite alternate}.glowChoice .btn{background:var(--orange)!important;color:#201007!important;box-shadow:0 0 28px rgba(255,122,22,.38)}@keyframes nkGlow{from{transform:translate(-8%,-4%) scale(.9);opacity:.65}to{transform:translate(8%,4%) scale(1.1);opacity:1}}
+@media(max-width:960px){.valueGrid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.valueGrid{grid-template-columns:1fr 1fr;gap:8px}.valueGrid>div{padding:14px;min-height:145px}.valueGrid b{font-size:14px}.valueGrid span{font-size:11px}.phoneShowcase{padding:28px 38px 20px;border-radius:26px}.realPhone{width:250px;height:505px}.phoneShowcase .screenCard{min-width:82vw}.phoneShowcase .screenCard h3{font-size:22px}.appBottomLine{grid-template-columns:1fr;text-align:center}.appBottomLine a{display:block}.appIntro p{font-size:16px}}
+
+/* === V29 focused visual fixes === */
+/* App section uses the same site background; inner cards become warm beige instead of black-on-black */
+#app{background:var(--bg)!important}
+#app .valueGrid{background:#171716!important;border-color:#2d2b28!important}
+#app .valueGrid>div{background:#eee3d4!important;border-color:#d9c8b5!important;color:#211a14!important}
+#app .valueGrid b{color:#211a14!important}
+#app .valueGrid span{color:#6f6256!important}
+#app .phoneShowcase{background:radial-gradient(circle at 50% 48%,rgba(255,122,22,.14),transparent 38%),#11110f!important}
+
+/* Restore the large movement statement as a real layout element so it can never be clipped */
+#inside:after{display:none!important;content:none!important}
+.movementStatement{max-width:1180px;margin:76px auto 86px;padding:0 20px;box-sizing:border-box;text-align:center;font-size:clamp(58px,7.5vw,112px);font-weight:950;line-height:.84;letter-spacing:-.065em;color:rgba(255,122,22,.075);white-space:nowrap;overflow:visible;pointer-events:none}
+#inside{padding-bottom:54px!important}
+#inside + .movementStatement + .founder{padding-top:72px!important}
+
+/* FAQ columns finish on the same baseline */
+.faqGrid{align-items:stretch!important}
+.faqIntro{display:flex!important;flex-direction:column!important;height:100%!important}
+.faqBadge{margin-top:auto!important;background:var(--orange)!important;background-image:none!important;box-shadow:none!important;border:0!important}
+.faqBadge:after{display:none!important;content:none!important}
+
+/* tighter final entry block after removing explanatory paragraph */
+.finalHead{margin-bottom:0!important}
+.choiceGrid{margin-top:24px!important}
+
+@media(max-width:960px){.faqIntro{height:auto!important}.faqBadge{margin-top:26px!important}.movementStatement{margin:58px auto 66px;white-space:normal}}
+@media(max-width:700px){.movementStatement{font-size:48px;line-height:.86;margin:46px auto 56px;padding:0 14px}.choiceGrid{margin-top:20px!important}}
+
+</style>
 <style id="v15-mobile-final">
 /* Requested final fixes. Desktop untouched except CTA decorative NK removal. */
 .ctaBox:after{display:none!important;content:none!important;}
@@ -1083,8 +1128,14 @@ body{
     pointer-events:none!important;z-index:0!important;
   }
 }
-</style>
 
+/* v22 — full app carousel + two-path final CTA */
+.appShowcase{padding:54px 0 72px}.appIntro{max-width:720px;margin-bottom:28px}.appIntro h2{font-size:clamp(42px,5vw,76px);line-height:.94;margin:10px 0 18px}.appIntro p{max-width:620px;font-size:18px;color:var(--muted)}
+.appCarousel{position:relative;overflow:hidden;border-radius:34px;padding:34px 56px;background:radial-gradient(circle at 75% 20%,rgba(255,122,22,.20),transparent 30%),linear-gradient(135deg,#171512,#0b0b0a);box-shadow:0 28px 70px rgba(43,28,17,.16)}
+.carTrack{display:flex;gap:26px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;scroll-behavior:smooth;padding:4px 2px 10px}.carTrack::-webkit-scrollbar{display:none}.screenCard{min-width:min(360px,76vw);scroll-snap-align:center;color:#fff;text-align:center}.screenCard h3{font-size:24px;margin:18px 0 7px}.screenCard p{color:#bdb7ae;max-width:320px;margin:auto;line-height:1.45}.screenPhone,.manifestoPhone{position:relative;width:260px;height:520px;margin:auto;border:7px solid #222;border-radius:45px;background:#080808;padding:9px;box-shadow:0 30px 70px rgba(0,0,0,.45),inset 0 0 0 1px rgba(255,255,255,.08);overflow:hidden}.screenPhone img{width:100%;height:100%;object-fit:cover;object-position:top;border-radius:30px;display:block}.screenIsland{position:absolute;z-index:2;top:16px;left:50%;transform:translateX(-50%);width:32%;height:17px;border-radius:99px;background:#050505}.manifestoPhone{display:flex;flex-direction:column;justify-content:center;align-items:center;background:radial-gradient(circle at 50% 25%,#3d1b0d,#090909 55%);padding:24px}.manifestoPhone span{font-weight:900;font-size:36px;line-height:.8}.manifestoPhone em{font-family:Georgia,serif;font-size:34px;color:var(--orange);margin:58px 0 70px;transform:rotate(-6deg)}.manifestoPhone small{text-transform:uppercase;letter-spacing:.18em;color:#ddd}.carArrow{position:absolute;z-index:4;top:48%;width:48px;height:48px;border-radius:50%;border:1px solid rgba(255,255,255,.3);background:rgba(0,0,0,.45);color:white;font-size:24px;cursor:pointer}.carArrow.prev{left:14px}.carArrow.next{right:14px}.carDots{display:flex;justify-content:center;gap:8px;margin-top:14px}.carDots i{width:8px;height:8px;border-radius:50%;background:#cfc5b8}.carDots i.active{width:24px;border-radius:99px;background:var(--orange)}
+.finalChoice{background:#171717;color:#fff;border-radius:34px;padding:46px}.finalHead{max-width:760px}.finalHead h2{font-size:clamp(38px,5vw,68px);line-height:.95;margin:10px 0 16px}.finalHead p{color:#bdb8b1;font-size:18px}.choiceGrid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:32px}.choiceCard{border:1px solid #343434;border-radius:26px;padding:28px;background:#1d1d1d}.choiceCard.primary{background:linear-gradient(135deg,#40200f,#24150e);border-color:#6f3515}.choiceIcon{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;background:#2a2a2a;color:var(--orange);font-size:25px;font-weight:800}.primary .choiceIcon{background:#5a2b12}.choiceCard h3{font-size:28px;margin:18px 0 10px}.choiceCard p{color:#bbb4ad;line-height:1.5;min-height:76px}.choiceCard .btn{display:block;text-align:center;margin-top:18px}.choiceCard small{display:block;color:#a9a39c;margin-top:12px;text-align:center}.choiceCard .form{display:grid;gap:10px;margin-top:16px}.choiceCard .form input:not([type=checkbox]){background:#252525!important;border-color:#3a3a3a!important;color:#fff!important}.choiceCard .consentRow{color:#9f9992}
+@media(max-width:700px){.appShowcase{padding:34px 0 52px}.appIntro h2{font-size:42px}.appCarousel{padding:24px 38px;border-radius:26px}.screenCard{min-width:82vw}.screenPhone,.manifestoPhone{width:230px;height:460px;border-radius:39px}.screenPhone img{border-radius:26px}.carArrow{width:38px;height:38px;font-size:20px}.carArrow.prev{left:6px}.carArrow.next{right:6px}.finalChoice{padding:28px 18px;border-radius:26px}.choiceGrid{grid-template-columns:1fr}.choiceCard{padding:22px}.choiceCard p{min-height:0}.finalHead h2{font-size:40px}}
+</style>
 <style id="v16-mobile-final">
 @media(max-width:700px){
 
@@ -1191,9 +1242,14 @@ body{
     line-height:.98!important;
   }
 }
+
+/* v22 — full app carousel + two-path final CTA */
+.appShowcase{padding:54px 0 72px}.appIntro{max-width:720px;margin-bottom:28px}.appIntro h2{font-size:clamp(42px,5vw,76px);line-height:.94;margin:10px 0 18px}.appIntro p{max-width:620px;font-size:18px;color:var(--muted)}
+.appCarousel{position:relative;overflow:hidden;border-radius:34px;padding:34px 56px;background:radial-gradient(circle at 75% 20%,rgba(255,122,22,.20),transparent 30%),linear-gradient(135deg,#171512,#0b0b0a);box-shadow:0 28px 70px rgba(43,28,17,.16)}
+.carTrack{display:flex;gap:26px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;scroll-behavior:smooth;padding:4px 2px 10px}.carTrack::-webkit-scrollbar{display:none}.screenCard{min-width:min(360px,76vw);scroll-snap-align:center;color:#fff;text-align:center}.screenCard h3{font-size:24px;margin:18px 0 7px}.screenCard p{color:#bdb7ae;max-width:320px;margin:auto;line-height:1.45}.screenPhone,.manifestoPhone{position:relative;width:260px;height:520px;margin:auto;border:7px solid #222;border-radius:45px;background:#080808;padding:9px;box-shadow:0 30px 70px rgba(0,0,0,.45),inset 0 0 0 1px rgba(255,255,255,.08);overflow:hidden}.screenPhone img{width:100%;height:100%;object-fit:cover;object-position:top;border-radius:30px;display:block}.screenIsland{position:absolute;z-index:2;top:16px;left:50%;transform:translateX(-50%);width:32%;height:17px;border-radius:99px;background:#050505}.manifestoPhone{display:flex;flex-direction:column;justify-content:center;align-items:center;background:radial-gradient(circle at 50% 25%,#3d1b0d,#090909 55%);padding:24px}.manifestoPhone span{font-weight:900;font-size:36px;line-height:.8}.manifestoPhone em{font-family:Georgia,serif;font-size:34px;color:var(--orange);margin:58px 0 70px;transform:rotate(-6deg)}.manifestoPhone small{text-transform:uppercase;letter-spacing:.18em;color:#ddd}.carArrow{position:absolute;z-index:4;top:48%;width:48px;height:48px;border-radius:50%;border:1px solid rgba(255,255,255,.3);background:rgba(0,0,0,.45);color:white;font-size:24px;cursor:pointer}.carArrow.prev{left:14px}.carArrow.next{right:14px}.carDots{display:flex;justify-content:center;gap:8px;margin-top:14px}.carDots i{width:8px;height:8px;border-radius:50%;background:#cfc5b8}.carDots i.active{width:24px;border-radius:99px;background:var(--orange)}
+.finalChoice{background:#171717;color:#fff;border-radius:34px;padding:46px}.finalHead{max-width:760px}.finalHead h2{font-size:clamp(38px,5vw,68px);line-height:.95;margin:10px 0 16px}.finalHead p{color:#bdb8b1;font-size:18px}.choiceGrid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:32px}.choiceCard{border:1px solid #343434;border-radius:26px;padding:28px;background:#1d1d1d}.choiceCard.primary{background:linear-gradient(135deg,#40200f,#24150e);border-color:#6f3515}.choiceIcon{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;background:#2a2a2a;color:var(--orange);font-size:25px;font-weight:800}.primary .choiceIcon{background:#5a2b12}.choiceCard h3{font-size:28px;margin:18px 0 10px}.choiceCard p{color:#bbb4ad;line-height:1.5;min-height:76px}.choiceCard .btn{display:block;text-align:center;margin-top:18px}.choiceCard small{display:block;color:#a9a39c;margin-top:12px;text-align:center}.choiceCard .form{display:grid;gap:10px;margin-top:16px}.choiceCard .form input:not([type=checkbox]){background:#252525!important;border-color:#3a3a3a!important;color:#fff!important}.choiceCard .consentRow{color:#9f9992}
+@media(max-width:700px){.appShowcase{padding:34px 0 52px}.appIntro h2{font-size:42px}.appCarousel{padding:24px 38px;border-radius:26px}.screenCard{min-width:82vw}.screenPhone,.manifestoPhone{width:230px;height:460px;border-radius:39px}.screenPhone img{border-radius:26px}.carArrow{width:38px;height:38px;font-size:20px}.carArrow.prev{left:6px}.carArrow.next{right:6px}.finalChoice{padding:28px 18px;border-radius:26px}.choiceGrid{grid-template-columns:1fr}.choiceCard{padding:22px}.choiceCard p{min-height:0}.finalHead h2{font-size:40px}}
 </style>
-
-
 <style id="v17-last-mobile-fixes">
 @media(max-width:700px){
   #inside{
@@ -1213,9 +1269,14 @@ body{
     line-height:1.00!important;
   }
 }
+
+/* v22 — full app carousel + two-path final CTA */
+.appShowcase{padding:54px 0 72px}.appIntro{max-width:720px;margin-bottom:28px}.appIntro h2{font-size:clamp(42px,5vw,76px);line-height:.94;margin:10px 0 18px}.appIntro p{max-width:620px;font-size:18px;color:var(--muted)}
+.appCarousel{position:relative;overflow:hidden;border-radius:34px;padding:34px 56px;background:radial-gradient(circle at 75% 20%,rgba(255,122,22,.20),transparent 30%),linear-gradient(135deg,#171512,#0b0b0a);box-shadow:0 28px 70px rgba(43,28,17,.16)}
+.carTrack{display:flex;gap:26px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;scroll-behavior:smooth;padding:4px 2px 10px}.carTrack::-webkit-scrollbar{display:none}.screenCard{min-width:min(360px,76vw);scroll-snap-align:center;color:#fff;text-align:center}.screenCard h3{font-size:24px;margin:18px 0 7px}.screenCard p{color:#bdb7ae;max-width:320px;margin:auto;line-height:1.45}.screenPhone,.manifestoPhone{position:relative;width:260px;height:520px;margin:auto;border:7px solid #222;border-radius:45px;background:#080808;padding:9px;box-shadow:0 30px 70px rgba(0,0,0,.45),inset 0 0 0 1px rgba(255,255,255,.08);overflow:hidden}.screenPhone img{width:100%;height:100%;object-fit:cover;object-position:top;border-radius:30px;display:block}.screenIsland{position:absolute;z-index:2;top:16px;left:50%;transform:translateX(-50%);width:32%;height:17px;border-radius:99px;background:#050505}.manifestoPhone{display:flex;flex-direction:column;justify-content:center;align-items:center;background:radial-gradient(circle at 50% 25%,#3d1b0d,#090909 55%);padding:24px}.manifestoPhone span{font-weight:900;font-size:36px;line-height:.8}.manifestoPhone em{font-family:Georgia,serif;font-size:34px;color:var(--orange);margin:58px 0 70px;transform:rotate(-6deg)}.manifestoPhone small{text-transform:uppercase;letter-spacing:.18em;color:#ddd}.carArrow{position:absolute;z-index:4;top:48%;width:48px;height:48px;border-radius:50%;border:1px solid rgba(255,255,255,.3);background:rgba(0,0,0,.45);color:white;font-size:24px;cursor:pointer}.carArrow.prev{left:14px}.carArrow.next{right:14px}.carDots{display:flex;justify-content:center;gap:8px;margin-top:14px}.carDots i{width:8px;height:8px;border-radius:50%;background:#cfc5b8}.carDots i.active{width:24px;border-radius:99px;background:var(--orange)}
+.finalChoice{background:#171717;color:#fff;border-radius:34px;padding:46px}.finalHead{max-width:760px}.finalHead h2{font-size:clamp(38px,5vw,68px);line-height:.95;margin:10px 0 16px}.finalHead p{color:#bdb8b1;font-size:18px}.choiceGrid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:32px}.choiceCard{border:1px solid #343434;border-radius:26px;padding:28px;background:#1d1d1d}.choiceCard.primary{background:linear-gradient(135deg,#40200f,#24150e);border-color:#6f3515}.choiceIcon{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;background:#2a2a2a;color:var(--orange);font-size:25px;font-weight:800}.primary .choiceIcon{background:#5a2b12}.choiceCard h3{font-size:28px;margin:18px 0 10px}.choiceCard p{color:#bbb4ad;line-height:1.5;min-height:76px}.choiceCard .btn{display:block;text-align:center;margin-top:18px}.choiceCard small{display:block;color:#a9a39c;margin-top:12px;text-align:center}.choiceCard .form{display:grid;gap:10px;margin-top:16px}.choiceCard .form input:not([type=checkbox]){background:#252525!important;border-color:#3a3a3a!important;color:#fff!important}.choiceCard .consentRow{color:#9f9992}
+@media(max-width:700px){.appShowcase{padding:34px 0 52px}.appIntro h2{font-size:42px}.appCarousel{padding:24px 38px;border-radius:26px}.screenCard{min-width:82vw}.screenPhone,.manifestoPhone{width:230px;height:460px;border-radius:39px}.screenPhone img{border-radius:26px}.carArrow{width:38px;height:38px;font-size:20px}.carArrow.prev{left:6px}.carArrow.next{right:6px}.finalChoice{padding:28px 18px;border-radius:26px}.choiceGrid{grid-template-columns:1fr}.choiceCard{padding:22px}.choiceCard p{min-height:0}.finalHead h2{font-size:40px}}
 </style>
-
-
 <style id="v18-mobile-menu-cards">
 @media(max-width:960px){
   .mobilePanel{
@@ -1293,9 +1354,14 @@ body{
     font-size:25px!important;
   }
 }
+
+/* v22 — full app carousel + two-path final CTA */
+.appShowcase{padding:54px 0 72px}.appIntro{max-width:720px;margin-bottom:28px}.appIntro h2{font-size:clamp(42px,5vw,76px);line-height:.94;margin:10px 0 18px}.appIntro p{max-width:620px;font-size:18px;color:var(--muted)}
+.appCarousel{position:relative;overflow:hidden;border-radius:34px;padding:34px 56px;background:radial-gradient(circle at 75% 20%,rgba(255,122,22,.20),transparent 30%),linear-gradient(135deg,#171512,#0b0b0a);box-shadow:0 28px 70px rgba(43,28,17,.16)}
+.carTrack{display:flex;gap:26px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;scroll-behavior:smooth;padding:4px 2px 10px}.carTrack::-webkit-scrollbar{display:none}.screenCard{min-width:min(360px,76vw);scroll-snap-align:center;color:#fff;text-align:center}.screenCard h3{font-size:24px;margin:18px 0 7px}.screenCard p{color:#bdb7ae;max-width:320px;margin:auto;line-height:1.45}.screenPhone,.manifestoPhone{position:relative;width:260px;height:520px;margin:auto;border:7px solid #222;border-radius:45px;background:#080808;padding:9px;box-shadow:0 30px 70px rgba(0,0,0,.45),inset 0 0 0 1px rgba(255,255,255,.08);overflow:hidden}.screenPhone img{width:100%;height:100%;object-fit:cover;object-position:top;border-radius:30px;display:block}.screenIsland{position:absolute;z-index:2;top:16px;left:50%;transform:translateX(-50%);width:32%;height:17px;border-radius:99px;background:#050505}.manifestoPhone{display:flex;flex-direction:column;justify-content:center;align-items:center;background:radial-gradient(circle at 50% 25%,#3d1b0d,#090909 55%);padding:24px}.manifestoPhone span{font-weight:900;font-size:36px;line-height:.8}.manifestoPhone em{font-family:Georgia,serif;font-size:34px;color:var(--orange);margin:58px 0 70px;transform:rotate(-6deg)}.manifestoPhone small{text-transform:uppercase;letter-spacing:.18em;color:#ddd}.carArrow{position:absolute;z-index:4;top:48%;width:48px;height:48px;border-radius:50%;border:1px solid rgba(255,255,255,.3);background:rgba(0,0,0,.45);color:white;font-size:24px;cursor:pointer}.carArrow.prev{left:14px}.carArrow.next{right:14px}.carDots{display:flex;justify-content:center;gap:8px;margin-top:14px}.carDots i{width:8px;height:8px;border-radius:50%;background:#cfc5b8}.carDots i.active{width:24px;border-radius:99px;background:var(--orange)}
+.finalChoice{background:#171717;color:#fff;border-radius:34px;padding:46px}.finalHead{max-width:760px}.finalHead h2{font-size:clamp(38px,5vw,68px);line-height:.95;margin:10px 0 16px}.finalHead p{color:#bdb8b1;font-size:18px}.choiceGrid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:32px}.choiceCard{border:1px solid #343434;border-radius:26px;padding:28px;background:#1d1d1d}.choiceCard.primary{background:linear-gradient(135deg,#40200f,#24150e);border-color:#6f3515}.choiceIcon{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;background:#2a2a2a;color:var(--orange);font-size:25px;font-weight:800}.primary .choiceIcon{background:#5a2b12}.choiceCard h3{font-size:28px;margin:18px 0 10px}.choiceCard p{color:#bbb4ad;line-height:1.5;min-height:76px}.choiceCard .btn{display:block;text-align:center;margin-top:18px}.choiceCard small{display:block;color:#a9a39c;margin-top:12px;text-align:center}.choiceCard .form{display:grid;gap:10px;margin-top:16px}.choiceCard .form input:not([type=checkbox]){background:#252525!important;border-color:#3a3a3a!important;color:#fff!important}.choiceCard .consentRow{color:#9f9992}
+@media(max-width:700px){.appShowcase{padding:34px 0 52px}.appIntro h2{font-size:42px}.appCarousel{padding:24px 38px;border-radius:26px}.screenCard{min-width:82vw}.screenPhone,.manifestoPhone{width:230px;height:460px;border-radius:39px}.screenPhone img{border-radius:26px}.carArrow{width:38px;height:38px;font-size:20px}.carArrow.prev{left:6px}.carArrow.next{right:6px}.finalChoice{padding:28px 18px;border-radius:26px}.choiceGrid{grid-template-columns:1fr}.choiceCard{padding:22px}.choiceCard p{min-height:0}.finalHead h2{font-size:40px}}
 </style>
-
-
 <style id="v19-compact-mobile-menu">
 @media(max-width:960px){
   .mobilePanel{
@@ -1341,9 +1407,14 @@ body{
     font-size:21px!important;
   }
 }
+
+/* v22 — full app carousel + two-path final CTA */
+.appShowcase{padding:54px 0 72px}.appIntro{max-width:720px;margin-bottom:28px}.appIntro h2{font-size:clamp(42px,5vw,76px);line-height:.94;margin:10px 0 18px}.appIntro p{max-width:620px;font-size:18px;color:var(--muted)}
+.appCarousel{position:relative;overflow:hidden;border-radius:34px;padding:34px 56px;background:radial-gradient(circle at 75% 20%,rgba(255,122,22,.20),transparent 30%),linear-gradient(135deg,#171512,#0b0b0a);box-shadow:0 28px 70px rgba(43,28,17,.16)}
+.carTrack{display:flex;gap:26px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;scroll-behavior:smooth;padding:4px 2px 10px}.carTrack::-webkit-scrollbar{display:none}.screenCard{min-width:min(360px,76vw);scroll-snap-align:center;color:#fff;text-align:center}.screenCard h3{font-size:24px;margin:18px 0 7px}.screenCard p{color:#bdb7ae;max-width:320px;margin:auto;line-height:1.45}.screenPhone,.manifestoPhone{position:relative;width:260px;height:520px;margin:auto;border:7px solid #222;border-radius:45px;background:#080808;padding:9px;box-shadow:0 30px 70px rgba(0,0,0,.45),inset 0 0 0 1px rgba(255,255,255,.08);overflow:hidden}.screenPhone img{width:100%;height:100%;object-fit:cover;object-position:top;border-radius:30px;display:block}.screenIsland{position:absolute;z-index:2;top:16px;left:50%;transform:translateX(-50%);width:32%;height:17px;border-radius:99px;background:#050505}.manifestoPhone{display:flex;flex-direction:column;justify-content:center;align-items:center;background:radial-gradient(circle at 50% 25%,#3d1b0d,#090909 55%);padding:24px}.manifestoPhone span{font-weight:900;font-size:36px;line-height:.8}.manifestoPhone em{font-family:Georgia,serif;font-size:34px;color:var(--orange);margin:58px 0 70px;transform:rotate(-6deg)}.manifestoPhone small{text-transform:uppercase;letter-spacing:.18em;color:#ddd}.carArrow{position:absolute;z-index:4;top:48%;width:48px;height:48px;border-radius:50%;border:1px solid rgba(255,255,255,.3);background:rgba(0,0,0,.45);color:white;font-size:24px;cursor:pointer}.carArrow.prev{left:14px}.carArrow.next{right:14px}.carDots{display:flex;justify-content:center;gap:8px;margin-top:14px}.carDots i{width:8px;height:8px;border-radius:50%;background:#cfc5b8}.carDots i.active{width:24px;border-radius:99px;background:var(--orange)}
+.finalChoice{background:#171717;color:#fff;border-radius:34px;padding:46px}.finalHead{max-width:760px}.finalHead h2{font-size:clamp(38px,5vw,68px);line-height:.95;margin:10px 0 16px}.finalHead p{color:#bdb8b1;font-size:18px}.choiceGrid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:32px}.choiceCard{border:1px solid #343434;border-radius:26px;padding:28px;background:#1d1d1d}.choiceCard.primary{background:linear-gradient(135deg,#40200f,#24150e);border-color:#6f3515}.choiceIcon{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;background:#2a2a2a;color:var(--orange);font-size:25px;font-weight:800}.primary .choiceIcon{background:#5a2b12}.choiceCard h3{font-size:28px;margin:18px 0 10px}.choiceCard p{color:#bbb4ad;line-height:1.5;min-height:76px}.choiceCard .btn{display:block;text-align:center;margin-top:18px}.choiceCard small{display:block;color:#a9a39c;margin-top:12px;text-align:center}.choiceCard .form{display:grid;gap:10px;margin-top:16px}.choiceCard .form input:not([type=checkbox]){background:#252525!important;border-color:#3a3a3a!important;color:#fff!important}.choiceCard .consentRow{color:#9f9992}
+@media(max-width:700px){.appShowcase{padding:34px 0 52px}.appIntro h2{font-size:42px}.appCarousel{padding:24px 38px;border-radius:26px}.screenCard{min-width:82vw}.screenPhone,.manifestoPhone{width:230px;height:460px;border-radius:39px}.screenPhone img{border-radius:26px}.carArrow{width:38px;height:38px;font-size:20px}.carArrow.prev{left:6px}.carArrow.next{right:6px}.finalChoice{padding:28px 18px;border-radius:26px}.choiceGrid{grid-template-columns:1fr}.choiceCard{padding:22px}.choiceCard p{min-height:0}.finalHead h2{font-size:40px}}
 </style>
-
-
 <style id="v20-payment-flow">
 .joinHint{
   margin-top:12px;
@@ -1365,166 +1436,369 @@ body{
 @media(max-width:700px){
   .joinHint,.questionLink{font-size:12px}
 }
+
+/* v22 — full app carousel + two-path final CTA */
+.appShowcase{padding:54px 0 72px}.appIntro{max-width:720px;margin-bottom:28px}.appIntro h2{font-size:clamp(42px,5vw,76px);line-height:.94;margin:10px 0 18px}.appIntro p{max-width:620px;font-size:18px;color:var(--muted)}
+.appCarousel{position:relative;overflow:hidden;border-radius:34px;padding:34px 56px;background:radial-gradient(circle at 75% 20%,rgba(255,122,22,.20),transparent 30%),linear-gradient(135deg,#171512,#0b0b0a);box-shadow:0 28px 70px rgba(43,28,17,.16)}
+.carTrack{display:flex;gap:26px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;scroll-behavior:smooth;padding:4px 2px 10px}.carTrack::-webkit-scrollbar{display:none}.screenCard{min-width:min(360px,76vw);scroll-snap-align:center;color:#fff;text-align:center}.screenCard h3{font-size:24px;margin:18px 0 7px}.screenCard p{color:#bdb7ae;max-width:320px;margin:auto;line-height:1.45}.screenPhone,.manifestoPhone{position:relative;width:260px;height:520px;margin:auto;border:7px solid #222;border-radius:45px;background:#080808;padding:9px;box-shadow:0 30px 70px rgba(0,0,0,.45),inset 0 0 0 1px rgba(255,255,255,.08);overflow:hidden}.screenPhone img{width:100%;height:100%;object-fit:cover;object-position:top;border-radius:30px;display:block}.screenIsland{position:absolute;z-index:2;top:16px;left:50%;transform:translateX(-50%);width:32%;height:17px;border-radius:99px;background:#050505}.manifestoPhone{display:flex;flex-direction:column;justify-content:center;align-items:center;background:radial-gradient(circle at 50% 25%,#3d1b0d,#090909 55%);padding:24px}.manifestoPhone span{font-weight:900;font-size:36px;line-height:.8}.manifestoPhone em{font-family:Georgia,serif;font-size:34px;color:var(--orange);margin:58px 0 70px;transform:rotate(-6deg)}.manifestoPhone small{text-transform:uppercase;letter-spacing:.18em;color:#ddd}.carArrow{position:absolute;z-index:4;top:48%;width:48px;height:48px;border-radius:50%;border:1px solid rgba(255,255,255,.3);background:rgba(0,0,0,.45);color:white;font-size:24px;cursor:pointer}.carArrow.prev{left:14px}.carArrow.next{right:14px}.carDots{display:flex;justify-content:center;gap:8px;margin-top:14px}.carDots i{width:8px;height:8px;border-radius:50%;background:#cfc5b8}.carDots i.active{width:24px;border-radius:99px;background:var(--orange)}
+.finalChoice{background:#171717;color:#fff;border-radius:34px;padding:46px}.finalHead{max-width:760px}.finalHead h2{font-size:clamp(38px,5vw,68px);line-height:.95;margin:10px 0 16px}.finalHead p{color:#bdb8b1;font-size:18px}.choiceGrid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:32px}.choiceCard{border:1px solid #343434;border-radius:26px;padding:28px;background:#1d1d1d}.choiceCard.primary{background:linear-gradient(135deg,#40200f,#24150e);border-color:#6f3515}.choiceIcon{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;background:#2a2a2a;color:var(--orange);font-size:25px;font-weight:800}.primary .choiceIcon{background:#5a2b12}.choiceCard h3{font-size:28px;margin:18px 0 10px}.choiceCard p{color:#bbb4ad;line-height:1.5;min-height:76px}.choiceCard .btn{display:block;text-align:center;margin-top:18px}.choiceCard small{display:block;color:#a9a39c;margin-top:12px;text-align:center}.choiceCard .form{display:grid;gap:10px;margin-top:16px}.choiceCard .form input:not([type=checkbox]){background:#252525!important;border-color:#3a3a3a!important;color:#fff!important}.choiceCard .consentRow{color:#9f9992}
+@media(max-width:700px){.appShowcase{padding:34px 0 52px}.appIntro h2{font-size:42px}.appCarousel{padding:24px 38px;border-radius:26px}.screenCard{min-width:82vw}.screenPhone,.manifestoPhone{width:230px;height:460px;border-radius:39px}.screenPhone img{border-radius:26px}.carArrow{width:38px;height:38px;font-size:20px}.carArrow.prev{left:6px}.carArrow.next{right:6px}.finalChoice{padding:28px 18px;border-radius:26px}.choiceGrid{grid-template-columns:1fr}.choiceCard{padding:22px}.choiceCard p{min-height:0}.finalHead h2{font-size:40px}}
+
+/* === V25 focused conversion/layout edits === */
+#app{background:#111;color:#fff;padding:88px 0}
+#app .appShowcase{padding:0}
+#app .appIntro{max-width:760px;margin:0 0 30px}
+#app .appIntro h2{font-size:clamp(44px,5vw,72px);margin:8px 0 12px;color:#fff}
+#app .appIntro p{font-size:18px;color:#aaa49d;margin:0}
+#app .eyebrow{color:#ff7a16}
+.appContentGrid{display:grid;grid-template-columns:330px minmax(0,1fr);gap:26px;align-items:stretch}
+#app .valueGrid{display:flex;flex-direction:column;gap:8px;margin:0;max-height:760px;overflow:auto;padding-right:4px}
+#app .valueGrid>div{background:#1b1b1b;border:1px solid #343434;border-radius:16px;padding:15px 16px;min-height:0;color:#fff}
+#app .valueGrid b{font-size:15px;margin-bottom:4px}
+#app .valueGrid span{font-size:12px;color:#aaa49d;line-height:1.35}
+#app .phoneShowcase{height:760px;display:flex;flex-direction:column;justify-content:center;padding:30px 54px 22px;border:1px solid #2d2d2d;box-shadow:none}
+#app .phoneShowcase .carTrack{align-items:center}
+#app .realPhone{height:590px;width:295px}
+#app .phoneShowcase .screenCard h3{color:#fff;margin-top:10px}
+#app .phoneShowcase .screenCard p{color:#aaa49d}
+#app .appBottomLine{margin-top:18px;padding:20px 24px;border-radius:22px}
+#app .appBottomLine a{background:#171717;color:#fff}
+#inside{position:relative;padding:82px 0 150px;overflow:visible!important}
+#inside .pathWrap{display:grid;grid-template-columns:1fr;gap:24px}
+#inside .pathSticky{position:static;background:var(--orange);border-radius:30px;padding:32px 36px;color:#211208;display:grid;grid-template-columns:1.05fr 1fr;column-gap:40px;align-items:center}
+#inside .pathSticky .eyebrow{color:#6a3108;grid-column:1}
+#inside .pathSticky h2{grid-column:1;margin:8px 0 0;font-size:clamp(38px,4.4vw,64px);line-height:.95}
+#inside .pathSticky>p{grid-column:2;grid-row:1 / span 2;color:#5b3215;font-size:17px;margin:0}
+#inside .softMode{grid-column:1 / -1;margin:24px 0 0;background:rgba(255,255,255,.34);border-color:rgba(80,35,5,.15);grid-template-columns:auto 1fr;gap:18px;align-items:center}
+#inside .softMode span{color:#5b3215}
+#inside .pathList{grid-template-columns:repeat(3,1fr);gap:12px}
+#inside .pathItem{padding:22px;grid-template-columns:48px 1fr}
+#inside:after{bottom:18px!important;max-width:92vw!important;font-size:clamp(54px,7.5vw,105px)!important;z-index:1!important}
+.offerActions{display:flex;gap:10px;align-items:center;position:relative;z-index:2;flex-wrap:wrap}
+.offerActions .btn{margin:0!important}
+.offerActions .offerQuestion{background:transparent!important;color:#211208!important;border:1px solid rgba(40,20,5,.42)!important}
+.choiceCard.primary{background:var(--orange)!important;border-color:var(--orange)!important;color:#201007!important}
+.choiceCard.primary:before{display:none!important}
+.choiceCard.primary .choiceIcon{background:rgba(30,15,5,.12)!important;color:#201007!important}
+.choiceCard.primary p,.choiceCard.primary small{color:#5c3214!important}
+.choiceCard.primary .btn{background:#151515!important;color:#fff!important;border-color:#151515!important;box-shadow:none!important;width:100%;box-sizing:border-box}
+.choiceCard .btn{box-sizing:border-box}
+@media(max-width:960px){.appContentGrid{grid-template-columns:1fr}.appContentGrid #app .valueGrid,#app .valueGrid{display:grid;grid-template-columns:repeat(2,1fr);max-height:none}.phoneShowcase,#app .phoneShowcase{height:auto;min-height:680px}#inside .pathList{grid-template-columns:1fr}}
+@media(max-width:700px){#app{padding:64px 0}#app .appIntro h2{font-size:42px}#app .valueGrid{grid-template-columns:1fr}#app .phoneShowcase{min-height:600px;padding:24px 38px 18px}#app .realPhone{height:500px;width:250px}#app .appBottomLine{grid-template-columns:1fr;gap:8px}#app .appBottomLine a{text-align:center}#inside{padding:62px 0 120px}#inside .pathSticky{grid-template-columns:1fr;padding:26px 22px}#inside .pathSticky .eyebrow,#inside .pathSticky h2,#inside .pathSticky>p,#inside .softMode{grid-column:1;grid-row:auto}#inside .pathSticky>p{margin-top:16px}#inside .softMode{grid-template-columns:1fr;gap:6px}#inside:after{bottom:20px!important;white-space:normal!important;width:94vw!important;line-height:.82!important}.offerActions{display:grid;grid-template-columns:1fr}.offerActions .btn{width:100%;text-align:center}}
+</style>
+
+<style id="v31-balanced-premium">
+/* V31 — reduce contrast and unify warm palette */
+#app{background:var(--bg)!important;padding:82px 0!important}
+#app .valueGrid{background:transparent!important;border:0!important;padding:0!important;box-shadow:none!important}
+#app .valueGrid>div{background:#eee7dd!important;border:1px solid #ddd3c6!important;color:#211d19!important;box-shadow:none!important}
+#app .valueGrid>div:hover{background:#eee7dd!important;border-color:#d8ccbd!important}
+#app .valueGrid b{color:#211d19!important}
+#app .valueGrid span{color:#71695f!important}
+#app .phoneShowcase{background:#26221e!important;border-color:#3a342e!important;box-shadow:0 16px 40px rgba(48,35,24,.07)!important}
+#app .appBottomLine{background:#eadfD2!important;border:1px solid #dccdbd!important}
+
+/* tighten transition from resident path to founder */
+#inside{padding-bottom:62px!important}
+#inside + .founder,.founder{padding-top:58px!important}
+.softModeWide{margin-bottom:0!important}
+
+/* centered, legible movement statement after founder */
+.movementStatement{display:block!important;width:min(1180px,calc(100% - 40px))!important;max-width:1180px!important;margin:26px auto 54px!important;padding:12px 0!important;text-align:center!important;font-size:clamp(44px,5.6vw,78px)!important;line-height:.95!important;letter-spacing:-.045em!important;font-weight:900!important;color:#e96f17!important;opacity:.82!important;white-space:normal!important;overflow:visible!important}
+.founder + .movementStatement{margin-top:30px!important;margin-bottom:54px!important}
+
+/* quieter final conversion area */
+.cta{background:var(--bg)!important}
+.finalChoice{background:#e8dfd4!important;color:#241f1a!important;border:1px solid #d9cdbf!important;box-shadow:0 14px 38px rgba(52,39,28,.045)!important}
+.finalHead h2{color:#241f1a!important}
+.choiceCard,.choiceCard.primary{background:#f1e9df!important;border:1px solid #ddd0c1!important;color:#241f1a!important;box-shadow:none!important}
+.choiceCard h3{color:#241f1a!important}
+.choiceCard p,.choiceCard.primary p{background:#f7f1e9!important;color:#6f655b!important;border:1px solid #e1d6ca!important}
+.choiceCard .choiceIcon,.choiceCard.primary .choiceIcon{background:#e5d8ca!important;color:#a34f12!important}
+.choiceCard.primary .btn{background:var(--orange)!important;border-color:var(--orange)!important;color:#20160f!important}
+.choiceCard:not(.primary) .btn{background:#fffdf9!important;border:1px solid #d7cabc!important;color:#241f1a!important}
+.choiceCard .form input:not([type=checkbox]){background:#fffaf4!important;border-color:#d9cdbf!important;color:#241f1a!important}
+.choiceCard small,.choiceCard .consentRow{color:#776e65!important}
+
+@media(max-width:700px){#inside{padding-bottom:42px!important}#inside + .founder,.founder{padding-top:42px!important}.movementStatement{font-size:40px!important;margin:18px auto 38px!important;padding:8px 0!important}}
+</style>
+
+<style id="v32-exact-fixes">
+/* exact requested fixes — appended last to override prior experiments */
+html,body{overflow-x:hidden!important}
+
+/* WHAT'S INSIDE: same site background, no dark left panel */
+#app{background:var(--bg)!important;color:var(--ink)!important;padding:78px 0!important}
+#app .appIntro h2{color:var(--ink)!important}
+#app .appIntro p{color:var(--muted)!important}
+#app .valueGrid{background:transparent!important;border:0!important;box-shadow:none!important;padding:0!important;gap:12px!important}
+#app .valueGrid>div{background:#e9dfd2!important;border:1px solid #d9cbbb!important;color:#211c18!important;border-radius:18px!important;box-shadow:none!important;padding:18px!important}
+#app .valueGrid>div:hover{background:#e9dfd2!important;border-color:#d9cbbb!important;transform:none!important}
+#app .valueGrid b{color:#211c18!important}
+#app .valueGrid span{color:#71675e!important}
+/* only gallery remains dark */
+#app .phoneShowcase{background:#1b1a18!important;border:1px solid #302d29!important}
+
+/* RESIDENT PATH -> FOUNDER: remove the huge dead gap */
+#inside{padding-bottom:26px!important}
+#inside + .founder,.founder{padding-top:28px!important}
+#inside .softModeWide{margin-bottom:0!important}
+
+/* founder label */
+#founder .eyebrow{color:var(--section-label)!important}
+
+/* MOVEMENT: normal NK orange, large, full width, centered */
+.movementStatement,.founder + .movementStatement{
+ display:block!important;
+ width:100%!important;
+ max-width:none!important;
+ box-sizing:border-box!important;
+ margin:28px 0 62px!important;
+ padding:16px 24px!important;
+ text-align:center!important;
+ color:var(--orange)!important;
+ opacity:1!important;
+ font-size:clamp(58px,8vw,128px)!important;
+ line-height:.88!important;
+ letter-spacing:-.055em!important;
+ font-weight:900!important;
+ white-space:nowrap!important;
+ overflow:hidden!important;
+}
+
+/* FINAL JOIN: whole block dark again; both cards follow the old dark question card */
+.cta{background:var(--bg)!important}
+.finalChoice{background:#151515!important;color:#fff!important;border:1px solid #292929!important;box-shadow:none!important}
+.finalHead .eyebrow{color:var(--orange)!important}
+.finalHead h2{color:#fff!important}
+.choiceCard,.choiceCard.primary{background:#1d1d1d!important;border:1px solid #343434!important;color:#fff!important;box-shadow:none!important}
+.choiceCard h3,.choiceCard.primary h3{color:#fff!important}
+.choiceCard .choiceIcon,.choiceCard.primary .choiceIcon{background:#292929!important;color:var(--orange)!important}
+.choiceCard p,.choiceCard.primary p{background:transparent!important;border:0!important;color:#bdb8b2!important;padding:0!important}
+.choiceCard small,.choiceCard.primary small,.choiceCard .consentRow{color:#8f8a85!important}
+.choiceCard .form input:not([type=checkbox]){background:#252525!important;border:1px solid #3b3b3b!important;color:#fff!important}
+.choiceCard .form input::placeholder{color:#8f8a85!important}
+/* requested buttons */
+.choiceCard.primary .btn{background:var(--orange)!important;border-color:var(--orange)!important;color:#17110d!important;width:100%!important}
+.choiceCard:not(.primary) .btn{background:#f2eee8!important;border-color:#f2eee8!important;color:#171717!important;width:100%!important}
+
+@media(max-width:960px){
+ .movementStatement,.founder + .movementStatement{font-size:clamp(50px,9vw,86px)!important;white-space:normal!important}
+}
+@media(max-width:700px){
+ #app{padding:62px 0!important}
+ #inside{padding-bottom:18px!important}
+ #inside + .founder,.founder{padding-top:20px!important}
+ .movementStatement,.founder + .movementStatement{margin:18px 0 42px!important;padding:12px 16px!important;font-size:48px!important;white-space:normal!important}
+ .finalChoice{padding:26px 18px!important}
+}
+</style>
+
+
+<style id="v33-user-exact-fixes">
+/* EXACT FIXES — 23.09 */
+/* 1. "Что входит в NK" = тот же основной фон, что и "Путь резидента" */
+#app{background:var(--bg)!important;color:var(--ink)!important;padding:82px 0!important}
+#app .appShowcase{background:transparent!important}
+#app .appContentGrid{grid-template-columns:minmax(320px,.92fr) minmax(0,1.08fr)!important;gap:24px!important}
+/* Только 8 отдельных светлых карточек — никакой общей чёрной подложки слева */
+#app .valueGrid{background:transparent!important;border:0!important;box-shadow:none!important;padding:0!important;gap:12px!important;overflow:visible!important}
+#app .valueGrid>div{background:#ebe2d6!important;border:1px solid #d9cbbb!important;color:#211c18!important;border-radius:18px!important;box-shadow:none!important;padding:18px!important}
+#app .valueGrid>div:hover{background:#ebe2d6!important;border-color:#d9cbbb!important;transform:none!important;box-shadow:none!important}
+#app .valueGrid b{color:#211c18!important}
+#app .valueGrid span{color:#71675e!important}
+/* Галерея телефона остаётся тёмной */
+#app .phoneShowcase{background:#171715!important;border:1px solid #302e2a!important;box-shadow:none!important}
+/* Нижняя плашка снова полностью оранжевая, без glow */
+#app .appBottomLine{background:var(--orange)!important;color:#24150b!important;box-shadow:none!important;border:0!important}
+#app .appBottomLine b,#app .appBottomLine span{color:#24150b!important}
+#app .appBottomLine a{background:#171716!important;color:#fff!important;box-shadow:none!important}
+
+/* 2. Сокращаем воздух между Путём резидента и Основателем примерно вдвое */
+#inside{padding-bottom:92px!important}
+#inside + .founder,.founder{padding-top:58px!important}
+
+/* 3. Движение создаёт рост — после основателя, по центру, на всю ширину, полупрозрачно */
+.movementStatement,.founder + .movementStatement{width:100%!important;max-width:none!important;margin:34px 0 64px!important;padding:8px 20px!important;box-sizing:border-box!important;text-align:center!important;font-size:clamp(58px,7.2vw,112px)!important;line-height:.88!important;letter-spacing:-.055em!important;color:rgba(255,122,22,.12)!important;white-space:nowrap!important;overflow:hidden!important}
+
+/* 4. Финальный блок: обе карточки абсолютно одинаковые тёмные */
+.cta{background:var(--bg)!important}
+.finalChoice{background:#151515!important;color:#fff!important;border:1px solid #292929!important;box-shadow:none!important}
+.finalHead h2{color:#fff!important}
+.choiceCard,.choiceCard.primary{background:#1d1d1d!important;border:1px solid #343434!important;color:#fff!important;box-shadow:none!important}
+.choiceCard h3,.choiceCard.primary h3{color:#fff!important}
+.choiceCard .choiceIcon,.choiceCard.primary .choiceIcon{background:#292929!important;color:var(--orange)!important;box-shadow:none!important}
+.choiceCard p,.choiceCard.primary p{background:transparent!important;border:0!important;color:#bdb8b2!important;padding:0!important;box-shadow:none!important}
+.choiceCard small,.choiceCard.primary small,.choiceCard .consentRow{color:#8f8a85!important}
+.choiceCard .form input:not([type=checkbox]){background:#252525!important;border:1px solid #3b3b3b!important;color:#fff!important;box-shadow:none!important}
+.choiceCard .form input::placeholder{color:#8f8a85!important}
+/* Только две кнопки отличаются */
+.choiceCard.primary .btn{background:var(--orange)!important;border-color:var(--orange)!important;color:#17110d!important;box-shadow:none!important}
+.choiceCard:not(.primary) .btn{background:#f2eee8!important;border-color:#f2eee8!important;color:#171717!important;box-shadow:none!important}
+/* Никаких подсветок / градиентных glow */
+.glowChoice,.glowChoice:before,.choiceCard:before,.choiceCard:after,.appBottomLine:before,.appBottomLine:after{animation:none!important;box-shadow:none!important;filter:none!important}
+.glowChoice:before{display:none!important;content:none!important;background:none!important}
+
+@media(max-width:960px){
+ #app .appContentGrid{grid-template-columns:1fr!important}
+ #inside{padding-bottom:58px!important}
+ #inside + .founder,.founder{padding-top:38px!important}
+ .movementStatement,.founder + .movementStatement{font-size:clamp(48px,9vw,82px)!important;white-space:normal!important;margin:28px 0 48px!important}
+}
+@media(max-width:700px){
+ #app{padding:60px 0!important}
+ #app .valueGrid{grid-template-columns:1fr!important}
+ .movementStatement,.founder + .movementStatement{font-size:46px!important;line-height:.9!important;margin:22px 0 40px!important;padding:8px 14px!important}
+}
 </style>
 
 </head>
 <body>
 <header class="nav">
-  <div class="wrap navin">
-    <a class="brand" href="#top"><span class="brandMark">NK</span><span>NK CLUB</span></a>
-    <nav class="menu"><a href="#why">Зачем NK</a><a href="#tracking">Трекинг</a><a href="#inside">Что внутри</a><a href="#app">Приложение</a><a href="#join">Стоимость</a><a href="#founder">Основатель</a></nav>
-    <button class="mobileToggle" id="mobileToggle">Меню</button>
-    <a class="btn orange" href="https://t.me/c/4475449266/21" target="_blank" rel="noopener">Вступить</a>
-  </div>
-  <div class="wrap mobilePanel" id="mobilePanel"><a href="#why">Зачем NK</a><a href="#tracking">Трекинг</a><a href="#inside">Что внутри</a><a href="#app">Приложение</a><a href="#join">Стоимость</a><a href="#founder">Основатель</a></div>
+<div class="wrap navin">
+<a class="brand" href="#top"><span class="brandMark">NK</span><span>NK CLUB</span></a>
+<nav class="menu"><a href="#app">Что входит</a><a href="#inside">Путь резидента</a><a href="#tracking">Трекинг</a><a href="#founder">Основатель</a><a href="#join">Стоимость</a><a href="#faq">Вопросы</a></nav>
+<button class="mobileToggle" id="mobileToggle">Меню</button>
+<a class="btn orange" href="#final-choice">Вступить</a>
+</div>
+<div class="wrap mobilePanel" id="mobilePanel"><a href="#app">Что входит</a><a href="#inside">Путь резидента</a><a href="#tracking">Трекинг</a><a href="#founder">Основатель</a><a href="#join">Стоимость</a><a href="#faq">Вопросы</a></div>
 </header>
-
 <main id="top">
 <section class="hero">
-  <div class="wrap heroGrid">
-    <div class="reveal">
-      <div class="eyebrow">Отраслевое сообщество собственников</div>
-      <h1>Бизнес растёт быстрее, когда ты <em>не один.</em></h1>
-      <p class="lead">NK объединяет владельцев аутсорсинговых и аутстаффинговых компаний, которые хотят не просто обсуждать рост, а системно двигать бизнес через разборы, трекинг и сильное отраслевое окружение.</p>
-      <div class="heroActions"><a class="btn orange" href="https://t.me/c/4475449266/21" target="_blank" rel="noopener">Вступить в NK</a><a class="btn ghost" href="#tracking">Как работает клуб</a></div>
-    </div>
-    <div class="heroVisual reveal">
-      <div class="heroPhoto"></div>
-      <div class="floatCard fc1"><b>План → факт</b><span>Каждую неделю фиксируем действия и прогресс.</span></div>
-      <div class="floatCard fc2"><small>Внутри NK</small><b>Не советы. Опыт предпринимателей.</b></div>
-      <div class="orbit"></div>
-    </div>
-  </div>
-  <div class="ticker"><div class="tickerTrack"><span>РАЗБОР БИЗНЕСА</span><i>●</i><span>ТРЕКИНГ</span><i>●</i><span>ОТРАСЛЕВОЕ ОКРУЖЕНИЕ</span><i>●</i><span>БАЗА ЗНАНИЙ</span><i>●</i><span>ВСТРЕЧИ С ЭКСПЕРТАМИ</span><i>●</i><span>ПЛАН / ФАКТ</span><i>●</i><span>РАЗБОР БИЗНЕСА</span><i>●</i><span>ТРЕКИНГ</span><i>●</i><span>ОТРАСЛЕВОЕ ОКРУЖЕНИЕ</span><i>●</i><span>БАЗА ЗНАНИЙ</span><i>●</i><span>ВСТРЕЧИ С ЭКСПЕРТАМИ</span><i>●</i><span>ПЛАН / ФАКТ</span><i>●</i></div></div>
+<div class="wrap heroGrid">
+<div class="reveal">
+<div class="eyebrow">Отраслевое сообщество собственников</div>
+<h1>Бизнес растёт быстрее, когда ты <em>не один.</em></h1>
+<p class="lead">NK объединяет владельцев аутсорсинговых и аутстаффинговых компаний, которые хотят не просто обсуждать рост, а системно двигать бизнес через разборы, трекинг и сильное отраслевое окружение.</p>
+<div class="heroActions"><a class="btn orange" href="#final-choice">Вступить в NK</a><a class="btn ghost" href="#app">Как работает клуб</a></div>
+</div>
+<div class="heroVisual reveal">
+<div class="heroPhoto"></div>
+<div class="floatCard fc1"><b>План → факт</b><span>Каждую неделю фиксируем действия и прогресс.</span></div>
+<div class="floatCard fc2"><small>Внутри NK</small><b>Не советы. Опыт предпринимателей.</b></div>
+<div class="orbit"></div>
+</div>
+</div>
+<div class="ticker"><div class="tickerTrack"><span>РАЗБОР БИЗНЕСА</span><i>●</i><span>ТРЕКИНГ</span><i>●</i><span>ОТРАСЛЕВОЕ ОКРУЖЕНИЕ</span><i>●</i><span>БАЗА ЗНАНИЙ</span><i>●</i><span>ВСТРЕЧИ С ЭКСПЕРТАМИ</span><i>●</i><span>ПЛАН / ФАКТ</span><i>●</i><span>РАЗБОР БИЗНЕСА</span><i>●</i><span>ТРЕКИНГ</span><i>●</i><span>ОТРАСЛЕВОЕ ОКРУЖЕНИЕ</span><i>●</i><span>БАЗА ЗНАНИЙ</span><i>●</i><span>ВСТРЕЧИ С ЭКСПЕРТАМИ</span><i>●</i><span>ПЛАН / ФАКТ</span><i>●</i></div></div>
 </section>
 
-<section id="why">
-  <div class="wrap">
-    <div class="shiftHead reveal"><div><div class="eyebrow">Почему NK</div></div><div><h2>Не ещё один чат предпринимателей.</h2><p>Главная проблема собственника часто не в нехватке информации. Она в том, что внутри операционки сложно увидеть настоящую точку роста, выбрать приоритет и довести решение до результата.</p></div></div>
-    <div class="shiftGrid">
-      <article class="shiftCard reveal"><span class="n">01 / СМОТРЕТЬ ЧЕСТНО</span><h3>Увидеть, где бизнес реально буксует</h3><p>Разбираем не ощущения, а конкретную ситуацию: продажи, команда, процессы, экономика, роль собственника.</p></article>
-      <article class="shiftCard featured reveal"><span class="n">02 / ВЫБРАТЬ ХОД</span><h3>Сфокусироваться на действиях, которые двигают цифры</h3><p>Вместо десятка новых идей — следующий понятный шаг и критерий, по которому видно, сработал он или нет.</p></article>
-      <article class="shiftCard reveal"><span class="n">03 / НЕ СЛИТЬ ТЕМП</span><h3>Не оставить важное «на потом»</h3><p>Еженедельный ритм и ответственность перед группой возвращают фокус с текучки на рост компании.</p></article>
-    </div>
-  </div>
-</section>
 
-<section class="tracking" id="tracking">
-  <div class="wrap">
-    <div class="trackIntro reveal"><div class="trackTitle"><div class="eyebrow">Сердце клуба — трекинг</div><h2><span>Работа,</span><span>которую нельзя</span><span>«просто посмотреть».</span></h2></div><p>Трекинг — это не лекция и не мастермайнд, где все дают советы. Ты приходишь со своей целью, берёшь действия в работу, показываешь план/факт и каждую неделю корректируешь маршрут.</p></div>
-    <div class="trackBoard reveal">
-      <div class="trackNav">
-        <button class="trackBtn active" data-track="0"><b>01. Разбор</b>Находим точку роста</button>
-        <button class="trackBtn" data-track="1"><b>02. Цели</b>Фиксируем результат</button>
-        <button class="trackBtn" data-track="2"><b>03. План / факт</b>Делаем каждую неделю</button>
-        <button class="trackBtn" data-track="3"><b>04. Группа</b>Опыт вместо теории</button>
-      </div>
-      <div class="trackStage">
-        <article class="trackPanel active"><div class="bigN">01</div><h3>Сначала понимаем, что именно мешает следующему росту.</h3><p>Персональный разбор помогает убрать шум и зафиксировать одну-две ключевые зоны, где изменение даст наибольший эффект.</p><div class="proof"><span>цифры</span><span>узкие места</span><span>приоритет</span></div></article>
-        <article class="trackPanel"><div class="bigN">02</div><h3>Три цели превращают желание «расти» в конкретный маршрут.</h3><p>Одна бизнес-цель и личные цели с понятным критерием результата. Для каждой — действия и личная мотивация дойти до конца.</p><div class="proof"><span>3 цели</span><span>критерий результата</span><span>личный приз</span></div></article>
-        <article class="trackPanel"><div class="bigN">03</div><h3>Каждую неделю — что обещал, что сделал и что изменилось.</h3><p>План / факт убирает самообман. Если действие не сработало, мы не защищаем его — мы меняем следующий ход.</p><div class="proof"><span>еженедельно</span><span>действия</span><span>прогресс</span></div></article>
-        <article class="trackPanel"><div class="bigN">04</div><h3>Пять собственников. Никто никого не учит жить.</h3><p>В NK делятся собственным опытом: что делал, какой получил результат, где ошибся. Конфиденциально и без игры в «гуру».</p><div class="proof"><span>5 человек</span><span>конфиденциальность</span><span>реальный опыт</span></div></article>
-      </div>
-    </div>
-  </div>
-</section>
 
-<section id="inside">
-  <div class="wrap pathWrap">
-    <div class="pathSticky reveal"><div class="eyebrow">Что ты получаешь внутри</div><h2>Клуб построен вокруг движения, а не потребления контента.</h2><p>Можно прийти за окружением, но ценность NK раскрывается, когда используешь всю систему вместе.</p></div>
-    <div class="pathList">
-      <article class="pathItem reveal"><div class="pathIcon"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="15"/><circle cx="24" cy="24" r="7"/><path d="M24 3v7M24 38v7M3 24h7M38 24h7"/></svg></div><div class="pathCopy"><span class="pathNo">01</span><h3>Персональный разбор бизнеса</h3><p>Помогает определить слабые точки и понять, что именно делать дальше, чтобы перейти в следующую точку.</p></div></article>
-      <article class="pathItem reveal"><div class="pathIcon"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M28 7c7-2 11 0 13 1 1 2 3 6 1 13-2 7-7 13-15 18l-8-8C24 22 28 14 28 7Z"/><path d="M18 30l-6 1-5 5 9 2M27 39l-1 6-5 3-2-9"/><circle cx="33" cy="16" r="3"/></svg></div><div class="pathCopy"><span class="pathNo">02</span><h3>Трекинг-группа</h3><p>Малая группа собственников, еженедельные встречи, цели, план / факт и работа над прогрессом.</p></div></article>
-      <article class="pathItem reveal"><div class="pathIcon"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 18 24 9l18 9-18 9L6 18Z"/><path d="M13 23v10c6 6 16 6 22 0V23"/><path d="M42 18v13"/></svg></div><div class="pathCopy"><span class="pathNo">03</span><h3>Академия NK</h3><p>«Бизнес как актив», встречи со спикерами и реальные разборы участников собраны в одной базе знаний.</p></div></article>
-      <article class="pathItem reveal"><div class="pathIcon"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="18" cy="18" r="7"/><circle cx="32" cy="20" r="6"/><path d="M6 39c1-8 5-12 12-12s11 4 12 12M27 29c2-2 4-3 7-3 6 0 9 4 9 11"/></svg></div><div class="pathCopy"><span class="pathNo">04</span><h3>Каталог участников</h3><p>Можно найти предпринимателя по нише, компании или городу и быстро выйти на нужный контакт внутри сообщества.</p></div></article>
-      <article class="pathItem reveal"><div class="pathIcon"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M15 17c1-6 5-9 11-9 7 0 11 4 11 10 0 6-4 8-8 11-3 2-5 4-5 8"/><circle cx="24" cy="42" r="1.5"/></svg></div><div class="pathCopy"><span class="pathNo">05</span><h3>Прямой вопрос Илье</h3><p>Конкретный бизнес-вопрос можно отправить напрямую через приложение, не теряя его в общем чате.</p></div></article>
-    </div>
-  </div>
-</section>
+
+
+
+
 
 <section class="app" id="app">
-  <div class="wrap appShell reveal">
-    <div class="appGrid">
-      <div class="appCopy"><div class="eyebrow">NK всегда под рукой</div><h2>Весь клуб — в одном мини-приложении.</h2><p>Не нужно искать ссылки и материалы по чатам. Основные действия, люди и знания собраны в одном месте.</p>
-        <div class="appTabs">
-          <button class="appTab active" data-img="assets/nk-app-home-clean.png" data-left="assets/nk-app-residents-clean.png" data-right="assets/nk-app-academy-clean.png"><b>Главная</b><span>Разбор, трекинг, профиль и связь с командой</span></button>
-          <button class="appTab" data-img="assets/nk-app-residents-clean.png" data-left="assets/nk-app-home-clean.png" data-right="assets/nk-app-academy-clean.png"><b>Резиденты</b><span>Каталог предпринимателей и нужных контактов</span></button>
-          <button class="appTab" data-img="assets/nk-app-academy-clean.png" data-left="assets/nk-app-residents-clean.png" data-right="assets/nk-app-home-clean.png"><b>Академия</b><span>Программы, встречи и разборы участников</span></button>
-        </div>
-      </div>
-      <div class="phoneStage">
-        <div class="phoneGhost left"><span class="phoneIsland"></span><img id="ghostLeft" src="assets/nk-app-residents-clean.png" alt="NK residents"></div>
-        <div class="phoneMain"><span class="phoneIsland"></span><img id="mainPhone" src="assets/nk-app-home-clean.png" alt="NK menu"></div>
-        <div class="phoneGhost right"><span class="phoneIsland"></span><img id="ghostRight" src="assets/nk-app-academy-clean.png" alt="NK academy"></div>
-      </div>
+<div class="wrap appShowcase reveal">
+  <div class="appIntro">
+    <div class="eyebrow">Что входит в NK</div>
+    <h2>Весь NK — в одном приложении.</h2>
+    <p>Выбирай то, что нужно тебе сейчас.</p>
+  </div>
+  <div class="appContentGrid">
+  <div class="valueGrid">
+    <div><b>Рост и действия</b><span>Персональный разбор с Ильёй помогает определить следующий шаг, а трекинг — довести решения до результата через план / факт и работу с группой.</span></div>
+    <div><b>Академия</b><span>Полноценная база знаний: обучающие материалы, встречи со спикерами, записи и реальные разборы резидентов.</span></div>
+    <div><b>Каталог резидентов</b><span>Ищи партнёров, экспертов и нужные контакты по нише, городу и компетенциям.</span></div>
+    <div><b>Пространства NK</b><span>Открытый чат, закрытый чат резидентов и канал Ильи с инсайтами и ответами.</span></div>
+    <div><b>Поддержка клуба</b><span>Задай вопрос Илье лично и получи ответ или свяжись с командой NK по клубу, оплате, мероприятиям и другим вопросам.</span></div>
+  </div>
+  <div class="phoneShowcase">
+    <button aria-label="Назад" class="carArrow prev" type="button">←</button>
+    <div class="carTrack">
+      <article class="screenCard"><img class="realPhone" src="assets/nk-phone-1.webp" alt="Все возможности NK"><h3>Всё, что входит</h3><p>Разбор, трекинг, Академия, каталог резидентов и пространства NK — с одного экрана.</p></article>
+      <article class="screenCard"><img class="realPhone" src="assets/nk-phone-2.webp" alt="Академия NK"><h3>Академия NK</h3><p>Программы для роста, библиотека встреч со спикерами и реальные кейсы участников.</p></article>
+      <article class="screenCard"><img class="realPhone" src="assets/nk-phone-3.webp" alt="Каталог резидентов"><h3>Нужные люди внутри клуба</h3><p>Смотри, кто чем занимается и чем может помочь. Нетворкинг становится конкретным.</p></article>
+      <article class="screenCard"><img class="realPhone" src="assets/nk-phone-4.webp" alt="Пространства NK"><h3>Клуб всегда под рукой</h3><p>Разбор, трекинг, Академия, резиденты и чаты — выбирай то, что нужно именно сейчас.</p></article>
+      <article class="screenCard"><img class="realPhone" src="assets/nk-phone-5.webp" alt="Связаться с командой NK"><h3>Команда рядом</h3><p>Вопрос Илье, помощь команды, идеи по клубу, мероприятия и вопросы по оплате.</p></article>
+      <article class="screenCard"><img class="realPhone" src="assets/nk-phone-6.webp" alt="Запись на персональный разбор"><h3>Персональный разбор</h3><p>Заранее описываешь бизнес и запрос — встреча начинается сразу с сути и решений.</p></article>
+      <article class="screenCard"><img class="realPhone" src="assets/nk-phone-8.webp" alt="Главная страница резидента"><h3>Твоё резидентство</h3><p>Возможности клуба, адаптация и нужные действия собраны в личном кабинете.</p></article>
+      <article class="screenCard"><img class="realPhone" src="assets/nk-phone-9.webp" alt="Управление резидентством"><h3>Всё прозрачно</h3><p>Статус, срок резидентства и управление подпиской — прямо внутри приложения.</p></article>
     </div>
+    <button aria-label="Вперёд" class="carArrow next" type="button">→</button>
+    <div aria-hidden="true" class="carDots"></div>
   </div>
-</section>
-
-<section class="founder" id="founder">
-  <div class="wrap founderGrid">
-    <div class="founderPhoto reveal"></div>
-    <div class="founderCopy reveal"><div class="eyebrow">Основатель и ведущий трекинга</div><h2>Илья Прусенко</h2><p class="lead">Основатель HelpResource. В NK Илья работает с собственниками не как внешний теоретик, а как предприниматель: через реальные управленческие решения, цифры и опыт построения бизнеса.</p>
-      <div class="founderSocial">
-        <a class="socialBtn" href="https://www.instagram.com/ilya_prusenko?stkn=MXRpNzBwZmxxdTBzOA==" target="_blank" rel="noopener"><span class="socialDot"></span>Instagram</a>
-        <a class="socialBtn" href="https://t.me/ilya_prusenko" target="_blank" rel="noopener"><span class="socialDot"></span>Telegram</a>
-      </div>
-      <div class="founderFacts"><div class="fFact"><b>HelpResource</b><span>собственный бизнес</span></div><div class="fFact"><b>150+</b><span>сотрудников</span></div><div class="fFact"><b>18 стран</b><span>география компании</span></div><div class="fFact"><b>$140 млн</b><span>выручка бизнеса</span></div></div>
-      <div class="quote">Задача NK — не собрать как можно больше людей. Задача — чтобы бизнес участников реально изменился.</div>
-    </div>
   </div>
-</section>
+  <div class="appBottomLine"><b>4 900 ₽ / месяц</b><span>Один доступ — все возможности NK.</span><a href="#final-choice">Вступить в NK →</a></div>
+</div>
+</section><section id="inside">
+<div class="wrap pathWrap">
+<div class="pathSticky reveal"><div class="eyebrow">Путь резидента</div><h2>Хочешь расти — используй NK на максимум.</h2><p>Разбор → действия → трекинг → следующий вопрос Илье. Это идеальный маршрут для роста, но не обязательная программа.</p></div>
+<div class="pathList">
+<article class="pathItem reveal"><div class="pathIcon"><svg aria-hidden="true" viewbox="0 0 48 48"><circle cx="24" cy="24" r="15"></circle><circle cx="24" cy="24" r="7"></circle><path d="M24 3v7M24 38v7M3 24h7M38 24h7"></path></svg></div><div class="pathCopy"><span class="pathNo">01</span><h3>Персональный разбор с Ильёй</h3><p>Разбираете текущую точку бизнеса и фиксируете конкретные действия: что изменить, проверить или внедрить дальше.</p></div></article>
+<article class="pathItem reveal"><div class="pathIcon"><svg aria-hidden="true" viewbox="0 0 48 48"><path d="M28 7c7-2 11 0 13 1 1 2 3 6 1 13-2 7-7 13-15 18l-8-8C24 22 28 14 28 7Z"></path><path d="M18 30l-6 1-5 5 9 2M27 39l-1 6-5 3-2-9"></path><circle cx="33" cy="16" r="3"></circle></svg></div><div class="pathCopy"><span class="pathNo">02</span><h3>С действиями — в трекинг</h3><p>Два месяца работаешь в группе по плану / факту и доводишь решения из разбора до реальных изменений в бизнесе.</p></div></article>
+<article class="pathItem reveal"><div class="pathIcon"><svg aria-hidden="true" viewbox="0 0 48 48"><path d="M6 18 24 9l18 9-18 9L6 18Z"></path><path d="M13 23v10c6 6 16 6 22 0V23"></path><path d="M42 18v13"></path></svg></div><div class="pathCopy"><span class="pathNo">03</span><h3>Новый вопрос — напрямую Илье</h3><p>По ходу работы появился следующий вопрос? Отправляешь его через приложение. Илья отвечает, а полезные ответы публикуются в закрытом канале NK.</p></div></article>
 
-<section id="join">
-  <div class="wrap offerGrid">
-    <div class="offerCopy reveal"><div class="eyebrow">Один формат участия</div><h2>Без сложной тарифной сетки.</h2><p>Ты вступаешь в NK и получаешь доступ к экосистеме клуба: участникам, приложению, знаниям и рабочим форматам.</p></div>
-    <article class="offerCard reveal"><div class="offerTop"><div><div class="eyebrow" style="color:#6a3108">NK CLUB</div><h3>Ежемесячное участие</h3></div><div class="price">4 900 ₽<span>/ месяц</span></div></div>
-      <div class="offerList"><div class="offerItem">Отраслевое сообщество</div><div class="offerItem">Персональные разборы</div><div class="offerItem">Трекинг</div><div class="offerItem">Академия и база знаний</div><div class="offerItem">Каталог участников</div><div class="offerItem">Встречи и разборы</div></div>
-      <a class="btn" href="https://t.me/c/4475449266/21" target="_blank" rel="noopener">Вступить в NK — 4 900 ₽</a>
-      <div class="joinHint">Оплата и доступ к клубу — через приложение NK.</div>
-      <a class="questionLink" href="#apply">Есть вопросы перед оплатой? Задать вопрос</a>
-    </article>
-  </div>
-</section>
 
-<section class="faqSection">
-  <div class="wrap faqGrid">
-    <div class="faqIntro reveal"><div class="eyebrow">Перед вступлением</div><h2>Ответы без воды.</h2><p>То, что обычно хочется уточнить до оплаты: кому подходит клуб, как устроен трекинг и где всё находится.</p><div class="faqBadge"><b>Не нашёл свой вопрос?</b><span>Оставь контакты — команда NK свяжется и ответит на вопросы перед вступлением.</span></div></div>
-    <div class="faqList reveal">
-      <div class="faqItem open"><button class="faqQ"><span class="faqN">01</span><span>Кому подходит NK?</span><i>+</i></button><div class="faqA"><p>В первую очередь — владельцам действующих аутсорсинговых и аутстаффинговых компаний, которые готовы открыто работать над ростом бизнеса и внедрять решения.</p></div></div>
-      <div class="faqItem"><button class="faqQ"><span class="faqN">02</span><span>Трекинг входит в клуб?</span><i>+</i></button><div class="faqA"><p>Да. Трекинг — один из ключевых рабочих форматов NK. Группы небольшие, чтобы каждый участник получал достаточно внимания.</p></div></div>
-      <div class="faqItem"><button class="faqQ"><span class="faqN">03</span><span>Что если мне нужен только нетворкинг?</span><i>+</i></button><div class="faqA"><p>Если тебе нужен только нетворкинг — отлично. В NK можно просто знакомиться с предпринимателями, находить полезные связи, партнёров и нужные контакты. А если захочешь двигаться к конкретному результату — для этого есть разборы, трекинг и вся система клуба.</p></div></div>
-      <div class="faqItem"><button class="faqQ"><span class="faqN">04</span><span>Где находятся материалы и участники?</span><i>+</i></button><div class="faqA"><p>В мини-приложении NK: каталог участников, Академия, профиль, основные форматы и связь с командой собраны в одном месте.</p></div></div>
-    </div>
-  </div>
-</section>
-
-<section class="cta" id="apply">
-  <div class="wrap ctaBox reveal">
-    <div><div class="eyebrow">Остались вопросы?</div><h2>Задай вопрос команде NK.</h2><p>Оставь контакты — команда клуба свяжется с тобой, ответит на вопросы и поможет разобраться перед вступлением.</p></div>
-    
-<form class="form" id="applyForm">
-  <input required name="name" placeholder="Имя">
-  <input required name="phone" type="tel" placeholder="Номер телефона">
-  <input required name="telegram" placeholder="Telegram — например, @username">
-  <button class="btn" type="submit">Задать вопрос</button>
-  <label class="consentRow">
-    <input type="checkbox" required>
-    <span>Я согласен(на) на <a href="consent-personal-data.html" target="_blank">обработку персональных данных</a> и ознакомлен(а) с <a href="privacy.html" target="_blank">Политикой конфиденциальности</a>.</span>
-  </label>
-</form>
-
-  </div>
-</section>
-</main>
-
+</div>
+<div class="softMode softModeWide reveal"><b>Можно и без «большой работы»</b><span>Читай канал Ильи, общайся в закрытом чате, знакомься с резидентами и подключай рабочие форматы тогда, когда они нужны тебе.</span></div>
+</div>
+</section><section class="founder" id="founder">
+<div class="wrap founderGrid">
+<div class="founderPhoto reveal"></div>
+<div class="founderCopy reveal"><div class="eyebrow">Основатель</div><h2>Илья Прусенко</h2><p class="lead">Основатель HelpResource. В NK Илья работает с собственниками не как внешний теоретик, а как предприниматель: через реальные управленческие решения, цифры и опыт построения бизнеса.</p>
+<div class="founderSocial">
+<a class="socialBtn" href="https://www.instagram.com/ilya_prusenko?stkn=MXRpNzBwZmxxdTBzOA==" rel="noopener" target="_blank"><span class="socialDot"></span>Instagram</a>
+<a class="socialBtn" href="https://t.me/ilya_prusenko" rel="noopener" target="_blank"><span class="socialDot"></span>Telegram</a>
+</div>
+<div class="founderFacts"><div class="fFact"><b>HelpResource</b><span>собственный бизнес</span></div><div class="fFact"><b>150+</b><span>сотрудников</span></div><div class="fFact"><b>18 стран</b><span>география компании</span></div><div class="fFact"><b>$140 млн</b><span>выручка бизнеса</span></div></div>
+<div class="quote">Задача NK — не собрать как можно больше людей. Задача — чтобы бизнес участников реально изменился.</div>
+</div>
+</div>
+</section><div class="movementStatement" aria-hidden="true">ДВИЖЕНИЕ СОЗДАЁТ РОСТ</div><section id="join">
+<div class="wrap offerGrid">
+<div class="offerCopy reveal"><div class="eyebrow">Один формат участия</div><h2>Без сложной тарифной сетки.</h2><p>Ты вступаешь в NK и получаешь доступ к экосистеме клуба, участникам, приложению, знаниям и рабочим форматам.</p></div>
+<article class="offerCard reveal"><div class="offerTop"><div><div class="eyebrow" style="color:#6a3108">NK CLUB</div><h3>Ежемесячное участие</h3></div><div class="price">4 900 ₽<span>/ месяц</span></div></div>
+<div class="offerList"><div class="offerItem">Отраслевое сообщество</div><div class="offerItem">Персональные разборы</div><div class="offerItem">Трекинг</div><div class="offerItem">Академия и база знаний</div><div class="offerItem">Каталог участников</div><div class="offerItem">Встречи и разборы</div></div>
+<div class="offerActions"><a class="btn" href="#final-choice">Вступить в NK — 4 900 ₽</a><a class="btn offerQuestion" href="#final-choice">Задать вопрос</a></div>
+</article>
+</div>
+</section><section class="tracking" id="tracking">
+<div class="wrap">
+<div class="trackIntro reveal"><div class="trackTitle"><div class="eyebrow">Сердце клуба — трекинг</div><h2><span>Работа,</span><span>которую нельзя</span><span>«просто посмотреть».</span></h2></div><p>Трекинг — это не лекция и не мастермайнд, где все дают советы. Ты приходишь со своей целью, берёшь действия в работу, показываешь план/факт и каждую неделю корректируешь маршрут.</p></div>
+<div class="trackBoard reveal">
+<div class="trackNav">
+<button class="trackBtn active" data-track="0"><b>01. Разбор</b>Находим точку роста</button>
+<button class="trackBtn" data-track="1"><b>02. Цели</b>Фиксируем результат</button>
+<button class="trackBtn" data-track="2"><b>03. План / факт</b>Делаем каждую неделю</button>
+<button class="trackBtn" data-track="3"><b>04. Группа</b>Опыт вместо теории</button>
+</div>
+<div class="trackStage">
+<article class="trackPanel active"><div class="bigN">01</div><h3>Сначала понимаем, что именно мешает следующему росту.</h3><p>Персональный разбор помогает убрать шум и зафиксировать одну-две ключевые зоны, где изменение даст наибольший эффект.</p><div class="proof"><span>цифры</span><span>узкие места</span><span>приоритет</span></div></article>
+<article class="trackPanel"><div class="bigN">02</div><h3>Три цели превращают желание «расти» в конкретный маршрут.</h3><p>Одна бизнес-цель и личные цели с понятным критерием результата. Для каждой — действия и личная мотивация дойти до конца.</p><div class="proof"><span>3 цели</span><span>критерий результата</span><span>личный приз</span></div></article>
+<article class="trackPanel"><div class="bigN">03</div><h3>Каждую неделю — что обещал, что сделал и что изменилось.</h3><p>План / факт убирает самообман. Если действие не сработало, мы не защищаем его — мы меняем следующий ход.</p><div class="proof"><span>еженедельно</span><span>действия</span><span>прогресс</span></div></article>
+<article class="trackPanel"><div class="bigN">04</div><h3>Пять собственников. Никто никого не учит жить.</h3><p>В NK делятся собственным опытом: что делал, какой получил результат, где ошибся. Конфиденциально и без игры в «гуру».</p><div class="proof"><span>5 человек</span><span>конфиденциальность</span><span>реальный опыт</span></div></article>
+</div>
+</div>
+</div>
+</section><section class="faqSection" id="faq">
+<div class="wrap faqGrid">
+<div class="faqIntro reveal"><div class="eyebrow">Перед вступлением</div><h2>Ответы без воды.</h2><p>Коротко о том, что обычно хочется уточнить перед вступлением.</p><div class="faqBadge"><b>Не нашёл свой вопрос?</b><span>Оставь контакты — команда NK свяжется и ответит на вопросы перед вступлением.</span></div></div>
+<div class="faqList reveal">
+<div class="faqItem open"><button class="faqQ"><span class="faqN">01</span><span>Кому подходит NK?</span><i>+</i></button><div class="faqA"><p>В первую очередь — владельцам действующих аутсорсинговых и аутстаффинговых компаний, которые готовы открыто работать над ростом бизнеса и внедрять решения.</p></div></div>
+<div class="faqItem"><button class="faqQ"><span class="faqN">02</span><span>Трекинг входит в клуб?</span><i>+</i></button><div class="faqA"><p>Да. Трекинг — один из ключевых рабочих форматов NK. Группы небольшие, чтобы каждый участник получал достаточно внимания.</p></div></div>
+<div class="faqItem"><button class="faqQ"><span class="faqN">03</span><span>Что если мне нужен только нетворкинг?</span><i>+</i></button><div class="faqA"><p>Если тебе нужен только нетворкинг — отлично. В NK можно просто знакомиться с предпринимателями, находить полезные связи, партнёров и нужные контакты. А если захочешь двигаться к конкретному результату — для этого есть разборы, трекинг и вся система клуба.</p></div></div>
+<div class="faqItem"><button class="faqQ"><span class="faqN">04</span><span>Где находятся материалы и участники?</span><i>+</i></button><div class="faqA"><p>В мини-приложении NK: каталог участников, Академия, профиль, основные форматы и связь с командой собраны в одном месте.</p></div></div>
+<div class="faqItem"><button class="faqQ"><span class="faqN">05</span><span>Если я оплачу через сайт, как получу доступ?</span><i>+</i></button><div class="faqA"><p>Кнопка оплаты открывает приложение NK. После оплаты доступ к приложению и сервисам клуба открывается автоматически — ждать менеджера не нужно.</p></div></div></div>
+</div>
+</section><section class="cta" id="apply">
+<div class="wrap finalChoice reveal" id="final-choice">
+<div class="finalHead"><div class="eyebrow">Готов стать частью NK?</div><h2>Выбери удобный способ вступления.</h2></div>
+<div class="choiceGrid">
+<article class="choiceCard primary glowChoice"><div class="choiceIcon">₽</div><h3>Вступить самостоятельно</h3><p>Оплати 4 900 ₽ в приложении NK и сразу получи доступ ко всем возможностям клуба.</p><a class="btn" href="https://t.me/nk_members_bot/menunk" rel="noopener" target="_blank">Оплатить и вступить →</a><small>Без ожидания менеджера · доступ открывается сразу после оплаты</small></article>
+<article class="choiceCard"><div class="choiceIcon">?</div><h3>Остались вопросы?</h3><p>Оставь контакты — команда NK свяжется с тобой и поможет разобраться перед вступлением.</p>
+<form class="form" id="applyForm"><input name="name" placeholder="Имя" required=""/><input name="phone" placeholder="Номер телефона" required="" type="tel"/><input name="telegram" placeholder="Telegram — например, @username"/><button class="btn" type="submit">Написать менеджеру</button><label class="consentRow"><input required="" type="checkbox"/><span>Я согласен(на) на обработку персональных данных.</span></label></form>
+</article>
+</div>
+</div>
+</section></main>
 <footer><div class="wrap foot">
-  <div class="brand"><span class="brandMark">NK</span><span>NK CLUB</span></div>
-  <span>Для владельцев аутсорсинговых и аутстаффинговых компаний</span>
-  <div class="legalLinks"><a href="privacy.html">Конфиденциальность</a><a href="consent-personal-data.html">Персональные данные</a><a href="marketing-consent.html">Рассылки</a></div>
-  <span>© 2026</span>
+<div class="brand"><span class="brandMark">NK</span><span>NK CLUB</span></div>
+<span>Для владельцев аутсорсинговых и аутстаффинговых компаний</span>
+<div class="legalLinks"><a href="privacy.html">Конфиденциальность</a><a href="consent-personal-data.html">Персональные данные</a><a href="marketing-consent.html">Рассылки</a></div>
+<span>© 2026</span>
 </div></footer>
-
 <script>
 const toggle=document.getElementById('mobileToggle'),panel=document.getElementById('mobilePanel');
 toggle.addEventListener('click',()=>{panel.classList.toggle('open');toggle.textContent=panel.classList.contains('open')?'Закрыть':'Меню'});
@@ -1540,7 +1814,6 @@ document.querySelectorAll('.faqQ').forEach(q=>q.addEventListener('click',()=>{q.
 
 const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 </script>
-
 <script>
 (() => {
   const form = document.getElementById('applyForm');
@@ -1597,7 +1870,223 @@ const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecti
     }
   });
 })();
-</script>
 
+const carTrack=document.querySelector('.carTrack');if(carTrack){const cards=[...carTrack.querySelectorAll('.screenCard')],dots=document.querySelector('.carDots');cards.forEach((_,i)=>{const d=document.createElement('i');if(i===0)d.classList.add('active');dots.appendChild(d)});const go=dir=>{const current=Math.round(carTrack.scrollLeft/carTrack.clientWidth);const next=Math.max(0,Math.min(cards.length-1,current+dir));carTrack.scrollTo({left:next*carTrack.clientWidth,behavior:'smooth'})};document.querySelector('.carArrow.prev')?.addEventListener('click',()=>go(-1));document.querySelector('.carArrow.next')?.addEventListener('click',()=>go(1));carTrack.addEventListener('scroll',()=>{let best=0,dist=1e9;cards.forEach((c,i)=>{const d=Math.abs(c.offsetLeft-carTrack.scrollLeft);if(d<dist){dist=d;best=i}});[...dots.children].forEach((d,i)=>d.classList.toggle('active',i===best))},{passive:true});}
+</script>
 </body>
 </html>
+<style id="v26-fixes">
+html,body{max-width:100%;overflow-x:hidden!important}body{position:relative}.wrap{max-width:min(1180px,calc(100vw - 40px))}
+/* WHAT'S INSIDE: one dark composition, equal columns */
+#app{background:#151515!important;color:#fff!important;padding:76px 0!important;overflow:hidden!important}
+#app .appShowcase{padding:0!important;max-width:min(1180px,calc(100vw - 40px))!important}
+#app .appIntro{margin-bottom:26px!important}.appIntro h2{color:#fff!important}.appIntro p{color:#aaa49d!important}
+#app .appContentGrid{display:grid!important;grid-template-columns:1fr 1fr!important;gap:18px!important;align-items:stretch!important}
+#app .valueGrid{display:grid!important;grid-template-columns:1fr 1fr!important;gap:10px!important;margin:0!important;padding:22px!important;max-height:none!important;overflow:visible!important;background:#0d0d0d!important;border:1px solid #343434!important;border-radius:30px!important}
+#app .valueGrid>div{background:transparent!important;border:1px solid #373737!important;border-radius:17px!important;padding:16px!important;color:#fff!important;min-height:112px!important;display:flex!important;flex-direction:column!important;justify-content:center!important}
+#app .valueGrid b{font-size:15px!important;margin-bottom:6px!important}#app .valueGrid span{font-size:12px!important;color:#aaa49d!important;line-height:1.4!important}
+#app .phoneShowcase{height:100%!important;min-height:650px!important;padding:24px 58px 18px!important;background:radial-gradient(circle at 50% 45%,rgba(255,122,22,.15),transparent 35%),#0d0d0d!important;border:1px solid #343434!important;border-radius:30px!important;overflow:hidden!important;box-shadow:none!important}
+#app .phoneShowcase .carTrack{display:flex!important;gap:0!important;overflow-x:auto!important;scroll-snap-type:x mandatory!important;padding:0!important;height:100%!important;align-items:center!important}
+#app .phoneShowcase .screenCard{flex:0 0 100%!important;min-width:100%!important;width:100%!important;scroll-snap-align:start!important;text-align:center!important}
+#app .phoneShowcase .screenCard h3,#app .phoneShowcase .screenCard p{display:none!important}
+#app .realPhone{width:min(330px,78%)!important;height:600px!important;object-fit:contain!important;margin:auto!important}
+#app .carArrow{top:50%!important;transform:translateY(-50%)!important}#app .carDots{margin-top:4px!important}
+#app .appBottomLine{margin-top:18px!important;grid-template-columns:auto 1fr auto!important}
+/* PATH: restore clean original two-column layout; only soft mode becomes full-width banner */
+#inside{overflow:hidden!important}
+#inside .pathWrap{display:grid!important;grid-template-columns:.9fr 1.1fr!important;gap:52px!important;align-items:start!important}
+#inside .pathSticky{position:sticky!important;top:110px!important;background:transparent!important;border-radius:0!important;padding:0!important;color:inherit!important;display:block!important}
+#inside .pathSticky .eyebrow{color:var(--orange)!important}#inside .pathSticky h2{margin:12px 0 18px!important;font-size:clamp(42px,5vw,76px)!important;line-height:.94!important}#inside .pathSticky>p{color:var(--muted)!important;font-size:18px!important;margin:0!important}
+#inside .softMode{margin-top:28px!important;padding:20px 22px!important;background:rgba(255,255,255,.55)!important;border:1px solid rgba(20,20,18,.12)!important;border-radius:22px!important;display:grid!important;grid-template-columns:1fr!important;gap:6px!important;color:inherit!important}
+#inside .softMode span{color:#777168!important}
+/* buttons equal */
+.offerActions{display:grid!important;grid-template-columns:1fr 1fr!important;gap:12px!important}.offerActions .btn{width:100%!important;min-height:52px!important;display:flex!important;align-items:center!important;justify-content:center!important;text-align:center!important;padding:0 18px!important;box-sizing:border-box!important}
+/* final choice: aligned CTAs, readable copy badge */
+.choiceGrid{align-items:stretch!important}.choiceCard{display:flex!important;flex-direction:column!important}.choiceCard p{min-height:0!important}.choiceCard .btn{min-height:52px!important;display:flex!important;align-items:center!important;justify-content:center!important;padding:0 18px!important;line-height:1.15!important}.choiceCard.primary p{background:rgba(255,255,255,.32)!important;border:1px solid rgba(70,30,5,.12)!important;border-radius:16px!important;padding:14px 16px!important;margin:8px 0 0!important}.choiceCard.primary .btn{margin-top:auto!important}.choiceCard.primary small{margin-bottom:0!important}.choiceCard:not(.primary) .form{margin-top:auto!important}
+@media(max-width:960px){#app .appContentGrid{grid-template-columns:1fr!important}#app .valueGrid{grid-template-columns:1fr 1fr!important}#app .phoneShowcase{min-height:620px!important}#inside .pathWrap{grid-template-columns:1fr!important}#inside .pathSticky{position:static!important}.offerActions{grid-template-columns:1fr 1fr!important}}
+@media(max-width:700px){.wrap,#app .appShowcase{max-width:calc(100vw - 28px)!important}#app{padding:58px 0!important}#app .valueGrid{grid-template-columns:1fr!important;padding:14px!important}#app .phoneShowcase{min-height:550px!important;padding:20px 38px 14px!important}#app .realPhone{height:500px!important;width:86%!important}#app .appBottomLine{grid-template-columns:1fr!important}.offerActions{grid-template-columns:1fr!important}#inside .pathSticky h2{font-size:42px!important}.choiceCard .btn{width:100%!important}}
+
+/* === v27 PREMIUM REFINEMENT === */
+html,body{max-width:100%;overflow-x:hidden!important}
+body{background:#f3ede4}
+section{position:relative}
+#app{background:#f3ede4!important;padding:88px 0 72px!important}
+#app .appIntro{margin-bottom:26px!important;max-width:680px!important}
+#app .appIntro h2{font-size:clamp(38px,4.2vw,60px)!important;letter-spacing:-.045em!important;line-height:.98!important;margin:9px 0 12px!important}
+#app .appIntro p{font-size:17px!important}
+#app .appContentGrid{gap:20px!important}
+#app .valueGrid,#app .phoneShowcase{background:#11110f!important;border:1px solid rgba(255,255,255,.11)!important;box-shadow:0 22px 60px rgba(46,35,25,.10)!important}
+#app .valueGrid{padding:20px!important}
+#app .valueGrid>div{border-color:rgba(255,255,255,.13)!important;transition:transform .35s ease,border-color .35s ease,background .35s ease!important}
+#app .valueGrid>div:hover{transform:translateY(-3px);border-color:rgba(255,122,22,.55)!important;background:rgba(255,122,22,.045)!important}
+#app .phoneShowcase{min-width:0!important;min-height:650px!important;background:radial-gradient(circle at 50% 48%,rgba(255,122,22,.16),transparent 38%),#11110f!important}
+#app .phoneShowcase .carTrack{width:100%!important;max-width:100%!important;gap:0!important;overscroll-behavior-x:contain!important;scroll-snap-stop:always!important}
+#app .phoneShowcase .screenCard{flex:0 0 100%!important;width:100%!important;min-width:100%!important;max-width:100%!important;scroll-snap-align:center!important;scroll-snap-stop:always!important}
+#app .realPhone{width:min(330px,82%)!important;height:auto!important;max-height:590px!important;object-fit:contain!important;transition:transform .5s cubic-bezier(.2,.8,.2,1),filter .5s ease!important}
+#app .screenCard:hover .realPhone{transform:translateY(-5px) scale(1.012);filter:drop-shadow(0 34px 34px rgba(0,0,0,.5))!important}
+#app .carArrow{backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);transition:transform .25s ease,background .25s ease!important}
+#app .carArrow:hover{transform:scale(1.08);background:rgba(255,122,22,.88)!important}
+#app .appBottomLine{box-shadow:0 16px 38px rgba(255,122,22,.18)!important}
+
+#inside{padding:92px 0 128px!important;background:#f3ede4!important;overflow:hidden!important}
+#inside .pathWrap{grid-template-columns:.82fr 1.18fr!important;gap:64px!important;align-items:start!important}
+#inside .pathSticky{position:sticky!important;top:120px!important}
+#inside .pathSticky h2{font-size:clamp(40px,4.5vw,66px)!important;max-width:8.8ch!important;letter-spacing:-.055em!important}
+#inside .pathList{display:grid!important;grid-template-columns:1fr!important;gap:16px!important;min-width:0!important}
+#inside .pathItem{width:100%!important;min-height:0!important;padding:28px!important;transition:transform .35s ease,box-shadow .35s ease,border-color .35s ease!important;box-shadow:0 14px 35px rgba(45,33,22,.045)!important}
+#inside .pathItem:hover{transform:translateY(-4px);box-shadow:0 22px 48px rgba(45,33,22,.09)!important;border-color:rgba(255,122,22,.3)!important}
+#inside .softModeWide{grid-column:1/-1!important;width:100%!important;margin:8px 0 0!important;padding:25px 30px!important;background:var(--orange)!important;border:0!important;border-radius:24px!important;display:grid!important;grid-template-columns:minmax(220px,.45fr) 1fr!important;align-items:center!important;gap:28px!important;color:#211208!important;box-shadow:0 18px 42px rgba(255,122,22,.16)!important}
+#inside .softModeWide b{font-size:20px!important;color:#211208!important}
+#inside .softModeWide span{color:#5b3215!important;font-size:15px!important;line-height:1.5!important}
+#inside:after{bottom:18px!important}
+#tracking{margin-top:44px!important}
+
+/* quieter premium motion */
+.reveal{transition:opacity .75s ease,transform .75s cubic-bezier(.2,.7,.2,1)!important}
+.btn,.socialBtn,.offerQuestion{transition:transform .25s ease,box-shadow .25s ease,background .25s ease!important}
+.btn:hover,.socialBtn:hover,.offerQuestion:hover{transform:translateY(-2px)}
+.offerCard,.trackBoard,.founderPhoto,.founderCopy{transition:transform .45s ease,box-shadow .45s ease!important}
+.offerCard:hover{transform:translateY(-4px);box-shadow:0 26px 65px rgba(44,29,17,.13)!important}
+
+@media(max-width:960px){
+ #inside .pathWrap{grid-template-columns:1fr!important;gap:28px!important}
+ #inside .pathSticky{position:static!important}
+ #inside .pathSticky h2{max-width:12ch!important}
+ #inside .softModeWide{grid-template-columns:1fr!important;gap:7px!important}
+ #app .phoneShowcase{min-height:610px!important}
+}
+@media(max-width:700px){
+ #app{padding:62px 0 54px!important}
+ #app .appIntro h2{font-size:38px!important}
+ #app .appContentGrid{gap:12px!important}
+ #app .valueGrid{grid-template-columns:1fr!important;padding:12px!important}
+ #app .valueGrid>div{min-height:auto!important;padding:15px!important}
+ #app .phoneShowcase{min-height:520px!important;padding:18px 34px 14px!important}
+ #app .realPhone{width:min(250px,88%)!important;max-height:470px!important}
+ #inside{padding:66px 0 116px!important}
+ #inside .pathSticky h2{font-size:40px!important;max-width:10ch!important}
+ #inside .pathItem{padding:21px!important;grid-template-columns:48px 1fr!important;gap:14px!important}
+ #inside .pathIcon{width:48px!important;height:48px!important}
+ #inside .softModeWide{padding:20px!important;border-radius:20px!important}
+ #inside:after{bottom:20px!important;font-size:32px!important}
+ #tracking{margin-top:34px!important}
+}
+
+/* === V28 typography, hierarchy and section order polish === */
+:root{--section-label:#9a4b10}
+html,body{max-width:100%;overflow-x:hidden}
+/* one visual system for section labels */
+.eyebrow,#app .eyebrow,#inside .pathSticky .eyebrow,.tracking .eyebrow,.ctaBox .eyebrow,.finalHead .eyebrow{color:var(--section-label)!important;font-size:11px!important;font-weight:900!important;letter-spacing:.16em!important;text-transform:uppercase!important}
+/* app: light section, dark inner panels */
+#app{background:var(--paper)!important;color:var(--ink)!important;padding:88px 0!important}
+#app .appIntro{margin-bottom:30px!important}
+#app .appIntro h2{color:var(--ink)!important;font-size:clamp(40px,4.4vw,58px)!important;line-height:.98!important;letter-spacing:-.045em!important;margin:10px 0 12px!important}
+#app .appIntro p{color:var(--muted)!important;font-size:17px!important}
+#app .appContentGrid{grid-template-columns:minmax(300px,.92fr) minmax(0,1.08fr)!important;gap:22px!important;align-items:stretch!important}
+#app .valueGrid,#app .phoneShowcase{background:#11110f!important;border:1px solid rgba(255,255,255,.11)!important;border-radius:30px!important;box-shadow:0 22px 60px rgba(46,35,25,.10)!important}
+#app .valueGrid{padding:20px!important;gap:9px!important;overflow:hidden!important;max-height:none!important}
+#app .valueGrid>div{background:#171715!important;border:1px solid #34322f!important;border-radius:15px!important;padding:14px 15px!important;color:#fff!important}
+#app .valueGrid b{color:#fff!important}.appContentGrid #app .valueGrid span,#app .valueGrid span{color:#aaa49d!important}
+#app .phoneShowcase{min-height:600px!important;height:auto!important;padding:22px 52px 18px!important}
+#app .realPhone{width:min(285px,76%)!important;max-height:535px!important;height:auto!important;transition:none!important;animation:none!important;filter:drop-shadow(0 24px 26px rgba(0,0,0,.36))!important}
+#app .screenCard:hover .realPhone{transform:none!important;filter:drop-shadow(0 24px 26px rgba(0,0,0,.36))!important}
+#app .screenCard{transform:none!important;animation:none!important}
+/* resident path: copy and 01/02/03 aligned, steps stacked */
+#inside{padding:92px 0 205px!important}
+#inside .pathWrap{display:grid!important;grid-template-columns:minmax(300px,.82fr) minmax(0,1.18fr)!important;gap:48px!important;align-items:start!important}
+#inside .pathSticky{position:static!important;background:transparent!important;border-radius:0!important;padding:0!important;color:var(--ink)!important;display:block!important;align-self:start!important}
+#inside .pathSticky h2{font-size:clamp(40px,4.4vw,58px)!important;line-height:.98!important;letter-spacing:-.045em!important;margin:10px 0 18px!important}
+#inside .pathSticky>p{color:var(--muted)!important;font-size:17px!important;line-height:1.55!important;margin:0!important}
+#inside .pathList{display:grid!important;grid-template-columns:1fr!important;gap:12px!important}
+#inside .pathItem{min-height:0!important;padding:24px!important;grid-template-columns:58px 1fr!important;align-items:start!important}
+#inside .softMode{grid-column:1/-1!important;margin:0!important;background:var(--orange)!important;border:0!important;border-radius:24px!important;padding:24px 28px!important;display:grid!important;grid-template-columns:minmax(220px,.45fr) 1fr!important;gap:28px!important;align-items:center!important;color:#211208!important}
+#inside .softMode b{font-size:20px!important;color:#211208!important}#inside .softMode span{color:#5b3215!important;font-size:15px!important;line-height:1.5!important}
+#inside:after{bottom:46px!important;opacity:.055!important}
+/* stronger breathing room around movement statement */
+#inside + .founder{padding-top:122px!important}
+/* tracking now lives after price section */
+.tracking{margin-top:24px!important;padding:104px 0!important}
+.tracking .trackTitle h2{font-size:clamp(40px,4.4vw,58px)!important}.tracking .trackIntro p{font-size:17px!important}
+/* consistent main section title scale */
+.offerCopy h2,.faqIntro h2,.finalHead h2,.founderCopy h2{font-size:clamp(40px,4.4vw,58px)!important;line-height:.98!important;letter-spacing:-.045em!important}
+/* final self-serve card: beige instead of another orange slab */
+.choiceCard.primary{background:#f2e8da!important;border-color:#dfcdb9!important;color:#20170f!important;box-shadow:none!important}
+.choiceCard.primary .choiceIcon{background:var(--orange)!important;color:#211208!important}
+.choiceCard.primary p{background:#f8f1e8!important;border:1px solid #e4d5c5!important;color:#5f5145!important}
+.choiceCard.primary small{color:#74685d!important}.choiceCard.primary .btn{background:#151515!important;color:#fff!important;border-color:#151515!important}
+.glowChoice{box-shadow:none!important}.glowChoice:before{display:none!important}
+@media(max-width:960px){#app .appContentGrid{grid-template-columns:1fr!important}#inside .pathWrap{grid-template-columns:1fr!important;gap:28px!important}#inside .softMode{grid-template-columns:1fr!important;gap:8px!important}}
+@media(max-width:700px){#app{padding:64px 0!important}#app .appIntro h2,#inside .pathSticky h2,.tracking .trackTitle h2,.offerCopy h2,.faqIntro h2,.finalHead h2,.founderCopy h2{font-size:38px!important}#app .phoneShowcase{min-height:500px!important;padding:18px 34px 14px!important}#app .realPhone{width:min(235px,84%)!important;max-height:450px!important}#inside{padding:68px 0 165px!important}#inside .softMode{padding:22px!important}#inside:after{bottom:36px!important}.tracking{padding:78px 0!important}}
+</style>
+\n<style id="v30-soft-premium">\n/* V30: quieter, warmer visual system */\n#app{background:#f3ede4!important;color:var(--ink)!important;padding:82px 0!important}\n#app .appIntro h2{color:var(--ink)!important}\n#app .appIntro p{color:var(--muted)!important}\n#app .appContentGrid{grid-template-columns:minmax(320px,.92fr) minmax(0,1.08fr)!important;gap:24px!important}\n/* left side is no longer a dark panel */\n#app .valueGrid{background:transparent!important;border:0!important;box-shadow:none!important;padding:0!important;gap:12px!important}\n#app .valueGrid>div{background:#e9dfd2!important;border:1px solid #ddcfbf!important;color:#201b17!important;border-radius:18px!important;padding:18px!important;box-shadow:0 8px 22px rgba(54,39,26,.035)!important;min-height:112px!important}\n#app .valueGrid>div:hover{transform:none!important;background:#eee5da!important;border-color:#d8c6b3!important}\n#app .valueGrid b{color:#201b17!important;font-size:15px!important}\n#app .valueGrid span{color:#766b61!important;font-size:12px!important}\n/* keep only the gallery as the dark visual anchor */\n#app .phoneShowcase{background:#1d1b18!important;border:1px solid #302d29!important;box-shadow:0 18px 45px rgba(48,35,24,.08)!important}\n#app .appBottomLine{box-shadow:none!important;background:#e7d7c5!important;color:#251b14!important}\n#app .appBottomLine .btn{background:#24211e!important;color:#fff!important}\n\n/* movement: compact statement after founder, not a giant empty zone */\n.movementStatement{margin:24px auto 54px!important;padding:0 20px!important;font-size:clamp(48px,6.4vw,92px)!important;line-height:.88!important;color:rgba(155,75,16,.09)!important;white-space:normal!important;max-width:1180px!important}\n.founder + .movementStatement{margin-top:34px!important;margin-bottom:58px!important}\n\n/* soften the final conversion block: no large black slab */\n.cta{background:#f3ede4!important}\n.finalChoice{background:#e7ddd0!important;color:#201b17!important;border:1px solid #dacbbb!important;box-shadow:0 18px 50px rgba(55,39,26,.055)!important}\n.finalHead h2{color:#201b17!important}\n.finalHead .eyebrow{color:var(--section-label)!important}\n.choiceCard{background:#f4ede4!important;border-color:#d9ccbd!important;color:#201b17!important;box-shadow:none!important}\n.choiceCard.primary{background:#efe4d6!important;border-color:#d9c8b6!important;color:#201b17!important}\n.choiceCard .choiceIcon{background:#e1d4c5!important;color:#9a4b10!important}\n.choiceCard.primary .choiceIcon{background:#dfc5aa!important;color:#7e3c0d!important}\n.choiceCard h3{color:#201b17!important}\n.choiceCard p,.choiceCard.primary p{color:#6e6258!important;background:#f7f1e9!important;border-color:#dfd2c4!important}\n.choiceCard small,.choiceCard.primary small{color:#7b7066!important}\n.choiceCard .form input:not([type=checkbox]){background:#fbf7f1!important;border-color:#d8cabc!important;color:#201b17!important}\n.choiceCard .form input::placeholder{color:#8b8178!important}\n.choiceCard .consentRow{color:#7b7066!important}\n.choiceCard:not(.primary) .btn{background:#dfc4aa!important;color:#251b14!important;box-shadow:none!important}\n.choiceCard.primary .btn{background:#25211e!important;color:#fff!important}\n\n@media(max-width:960px){#app .appContentGrid{grid-template-columns:1fr!important}.movementStatement{margin:26px auto 46px!important}}\n@media(max-width:700px){#app .valueGrid{grid-template-columns:1fr!important}.movementStatement{font-size:42px!important;margin:22px auto 40px!important}.finalChoice{padding:26px 18px!important}}\n</style>\n<style id="v34-exact-fixes">
+/* One light site background: same beige as Resident Path */
+#app,.cta{background:#f3ede4!important;color:var(--ink)!important}
+
+/* WHAT'S INSIDE NK: only the phone gallery stays dark */
+#app .valueGrid{background:transparent!important;border:0!important;box-shadow:none!important;padding:0!important;gap:12px!important}
+#app .valueGrid>div{background:#e9dfd2!important;border:1px solid #ddcfbf!important;color:#201b17!important;border-radius:18px!important;padding:18px!important;box-shadow:none!important}
+#app .valueGrid b{color:#201b17!important}
+#app .valueGrid span{color:#766b61!important}
+#app .valueGrid>div:hover{transform:none!important;background:#e9dfd2!important;border-color:#ddcfbf!important}
+#app .phoneShowcase{background:#11110f!important;border:1px solid #302d29!important;box-shadow:none!important}
+/* restore the orange price strip, no glow */
+#app .appBottomLine{background:var(--orange)!important;color:#20160f!important;box-shadow:none!important;border:0!important}
+#app .appBottomLine a{background:#151515!important;color:#fff!important;box-shadow:none!important}
+
+/* Resident path -> Founder: halve the excessive vertical air */
+#inside{padding-bottom:46px!important}
+#inside + .founder{padding-top:58px!important}
+
+/* Founder movement statement stays centered/full width/subtle */
+.movementStatement{width:100%!important;max-width:none!important;box-sizing:border-box!important;text-align:center!important;margin:30px auto 52px!important;padding:0 18px!important;color:rgba(255,122,22,.13)!important;font-size:clamp(48px,7vw,104px)!important;line-height:.9!important;white-space:nowrap!important;overflow:hidden!important}
+
+/* JOIN: both cards identical dark; only buttons differ */
+.cta{padding-top:72px!important;padding-bottom:72px!important}
+.finalChoice{background:#151515!important;color:#fff!important;border:1px solid #292929!important;box-shadow:none!important}
+.finalHead h2{color:#fff!important}
+.choiceCard,.choiceCard.primary{background:#1d1d1d!important;border:1px solid #343434!important;color:#fff!important;box-shadow:none!important;filter:none!important}
+.choiceCard h3,.choiceCard.primary h3{color:#fff!important}
+.choiceCard .choiceIcon,.choiceCard.primary .choiceIcon{background:#292929!important;color:var(--orange)!important;box-shadow:none!important}
+.choiceCard p,.choiceCard.primary p{background:transparent!important;border:0!important;color:#bdb8b2!important;padding:0!important;box-shadow:none!important}
+.choiceCard small,.choiceCard.primary small,.choiceCard .consentRow{color:#8f8a85!important}
+.choiceCard .form input:not([type=checkbox]){background:#252525!important;border:1px solid #3b3b3b!important;color:#fff!important;box-shadow:none!important}
+.choiceCard .form input::placeholder{color:#8f8a85!important}
+.choiceCard.primary .btn{background:var(--orange)!important;border-color:var(--orange)!important;color:#17110d!important;box-shadow:none!important}
+.choiceCard:not(.primary) .btn{background:#f2eee8!important;border-color:#f2eee8!important;color:#171717!important;box-shadow:none!important}
+.glowChoice,.glowChoice:before,.choiceCard:before,.choiceCard:after,.appBottomLine:before,.appBottomLine:after{animation:none!important;box-shadow:none!important;filter:none!important}
+
+@media(max-width:700px){
+ #inside{padding-bottom:30px!important}
+ #inside + .founder{padding-top:38px!important}
+ .movementStatement{font-size:42px!important;white-space:normal!important;margin:22px auto 38px!important}
+}
+</style>
+
+<style id="v35-interactions">
+/* compact app cards: light, readable, alive without glow */
+#app .valueGrid{grid-template-columns:1fr 1fr!important;align-content:start!important}
+#app .valueGrid>div{transition:transform .26s cubic-bezier(.2,.8,.2,1),border-color .26s ease,background .26s ease!important;box-shadow:none!important}
+#app .valueGrid>div:hover{transform:translateY(-4px)!important;border-color:rgba(255,122,22,.48)!important;box-shadow:none!important}
+#app .valueGrid>div:last-child:nth-child(odd){grid-column:1/-1!important}
+/* founder chips and facts: same tactile motion, no glow */
+#founder .socialBtn,#founder .fFact{transition:transform .25s cubic-bezier(.2,.8,.2,1),border-color .25s ease,background .25s ease!important;box-shadow:none!important}
+#founder .socialBtn:hover,#founder .fFact:hover{transform:translateY(-3px)!important;border-color:rgba(255,122,22,.45)!important;box-shadow:none!important}
+/* only primary orange CTAs may glow; secondary controls only move */
+.btn:not(.orange):hover,.socialBtn:hover,.offerQuestion:hover{box-shadow:none!important}
+@media(max-width:700px){#app .valueGrid{grid-template-columns:1fr!important}#app .valueGrid>div:last-child:nth-child(odd){grid-column:auto!important}}
+</style>
+<style>
+/* v36 — app benefits: one full-width row per benefit, aligned to phone showcase */
+#app .appContentGrid{align-items:stretch!important}
+#app .valueGrid{display:grid!important;grid-template-columns:1fr!important;grid-template-rows:repeat(5,1fr)!important;gap:10px!important;height:100%!important;max-height:none!important;overflow:visible!important;margin:0!important}
+#app .valueGrid>div{position:relative!important;min-height:0!important;height:auto!important;padding:18px 20px 18px 66px!important;display:flex!important;flex-direction:column!important;justify-content:center!important;transition:transform .22s ease,border-color .22s ease!important}
+#app .valueGrid>div:hover{transform:translateY(-3px)!important;border-color:rgba(255,122,22,.55)!important;box-shadow:none!important}
+#app .valueGrid>div::before{position:absolute;left:20px;top:50%;transform:translateY(-50%);font-size:12px;font-weight:900;letter-spacing:.08em;color:var(--orange)}
+#app .valueGrid>div:nth-child(1)::before{content:'01'}
+#app .valueGrid>div:nth-child(2)::before{content:'02'}
+#app .valueGrid>div:nth-child(3)::before{content:'03'}
+#app .valueGrid>div:nth-child(4)::before{content:'04'}
+#app .valueGrid>div:nth-child(5)::before{content:'05'}
+@media(max-width:960px){#app .valueGrid{height:auto!important;grid-template-rows:none!important}#app .valueGrid>div{min-height:108px!important}}
+@media(max-width:700px){#app .valueGrid>div{padding:16px 16px 16px 56px!important;min-height:104px!important}#app .valueGrid>div::before{left:17px}}
+</style>
